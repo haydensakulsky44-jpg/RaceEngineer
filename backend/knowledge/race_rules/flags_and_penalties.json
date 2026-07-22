@@ -1,0 +1,101 @@
+{
+    "flag_yellow": {
+        "display_name": "Drapeau jaune",
+        "aliases": ["drapeau jaune", "jaune"],
+        "meaning": "Danger sur ou à proximité de la piste. Interdiction formelle de dépasser dans la zone concernée.",
+        "driver_action": [
+            "Ralentir immédiatement et significativement",
+            "Ne pas dépasser jusqu'au drapeau vert marquant la fin de la zone dangereuse",
+            "Être prêt à éviter un obstacle ou une voiture arrêtée"
+        ]
+    },
+    "flag_double_yellow": {
+        "display_name": "Double drapeau jaune",
+        "aliases": ["double jaune", "drapeaux jaunes doubles"],
+        "meaning": "Danger sérieux, piste potentiellement partiellement ou totalement obstruée.",
+        "driver_action": [
+            "Ralentissement fort et immédiat",
+            "Être prêt à s'arrêter complètement",
+            "Interdiction totale de dépasser"
+        ]
+    },
+    "flag_blue": {
+        "display_name": "Drapeau bleu",
+        "aliases": ["drapeau bleu", "bleu"],
+        "meaning": "Une voiture plus rapide s'apprête à vous dépasser (ou vous êtes sur le point d'être doublé par un leader).",
+        "driver_action": [
+            "Laisser passer à la première occasion sûre",
+            "Ne pas bloquer volontairement la voiture plus rapide",
+            "Le non-respect répété peut entraîner une pénalité"
+        ]
+    },
+    "flag_white": {
+        "display_name": "Drapeau blanc",
+        "aliases": ["drapeau blanc", "blanc"],
+        "meaning": "Un véhicule lent circule sur le circuit (voiture de sécurité, véhicule d'intervention, ou concurrent en grande difficulté).",
+        "driver_action": [
+            "Redoubler de prudence",
+            "S'attendre à rattraper un véhicule très lent"
+        ]
+    },
+    "flag_black": {
+        "display_name": "Drapeau noir",
+        "aliases": ["drapeau noir", "noir"],
+        "meaning": "Disqualification. Généralement présenté avec le numéro de la voiture concernée.",
+        "driver_action": [
+            "Rentrer immédiatement aux stands",
+            "La course est terminée pour le pilote concerné"
+        ]
+    },
+    "flag_black_orange": {
+        "display_name": "Drapeau noir à disque orange",
+        "aliases": ["drapeau noir orange", "disque orange"],
+        "meaning": "Problème mécanique visible sur la voiture concernée (fuite, pièce qui se détache, etc.), présenté avec le numéro.",
+        "driver_action": [
+            "Rentrer au stand pour vérification",
+            "Ignorer ce drapeau peut entraîner une disqualification"
+        ]
+    },
+    "flag_checkered": {
+        "display_name": "Drapeau à damier",
+        "aliases": ["drapeau à damier", "drapeau a damier", "damier"],
+        "meaning": "Fin de la séance (course, essais ou qualifications).",
+        "driver_action": [
+            "Lever le pied progressivement, ne pas freiner brutalement sur la ligne",
+            "Respecter la procédure de fin de course propre à l'épreuve (tour de décélération, etc.)"
+        ]
+    },
+    "flag_green": {
+        "display_name": "Drapeau vert",
+        "aliases": ["drapeau vert", "vert"],
+        "meaning": "Fin d'une zone de danger, la piste est de nouveau dégagée, ou signal de départ d'une séance.",
+        "driver_action": [
+            "Reprise du rythme normal autorisée",
+            "Les dépassements redeviennent possibles"
+        ]
+    },
+
+    "overtaking_rules": {
+        "display_name": "Règles de dépassement",
+        "aliases": ["dépassement", "depassement", "doubler", "comment dépasser", "comment depasser", "règles de dépassement", "regles de depassement"],
+        "principles": [
+            "Le pilote qui attaque doit avoir au moins la moitié de sa voiture engagée à hauteur de l'adversaire pour revendiquer sa trajectoire dans le virage suivant.",
+            "Le pilote défenseur a le droit de choisir une trajectoire pour se défendre, mais une seule et de façon anticipée (pas de changement de trajectoire tardif et répété).",
+            "Il est interdit de repousser un adversaire hors de la piste de façon dangereuse.",
+            "Sur ligne droite, laisser une marge suffisante (généralement la largeur d'une voiture) au pilote qui attaque une fois qu'il est engagé."
+        ]
+    },
+
+    "common_penalties": {
+        "display_name": "Pénalités courantes",
+        "aliases": ["pénalité", "penalite", "pénalités", "penalites", "sanction"],
+        "types": [
+            "Avertissement (drapeau noir et blanc) : mise en garde sans sanction immédiate, souvent pour non-respect répété des drapeaux bleus.",
+            "Drive-through : traverser la voie des stands sans s'arrêter, à vitesse limitée.",
+            "Stop-and-go : arrêt obligatoire au stand pendant une durée fixe, sans intervention mécanique.",
+            "Pénalité en temps : ajout de secondes au temps de course final, appliqué après l'arrivée.",
+            "Recul sur la grille : pénalité appliquée à la qualification suivante ou au départ.",
+            "Disqualification : exclusion pure et simple des résultats de la séance."
+        ]
+    }
+}

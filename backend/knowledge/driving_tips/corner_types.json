@@ -1,0 +1,47 @@
+{
+    "hairpin": {
+        "display_name": "Épingle (virage très serré)",
+        "aliases": ["épingle", "epingle", "hairpin", "virage serré", "virage serre"],
+        "tips": [
+            "Freiner en ligne droite, terminer le freinage avant de tourner franchement.",
+            "Viser un point de corde tardif pour maximiser la vitesse de sortie plutôt que la vitesse d'entrée.",
+            "Prioriser l'accélération en ligne droite suivante : une épingle se négocie pour bien sortir, pas pour bien entrer."
+        ]
+    },
+    "fast_sweeper": {
+        "display_name": "Courbe rapide (virage à haute vitesse)",
+        "aliases": ["courbe rapide", "virage rapide", "fast sweeper", "grande courbe"],
+        "tips": [
+            "Trajectoire la plus tendue possible, éviter les à-coups au volant qui déstabilisent l'appui aéro.",
+            "Rester progressif sur les commandes : à haute vitesse, la marge d'erreur est faible.",
+            "L'appui aérodynamique fait une grande partie du travail ; faire confiance à la voiture plutôt que de lever le pied par réflexe."
+        ]
+    },
+    "chicane": {
+        "display_name": "Chicane (enchaînement gauche-droite serré)",
+        "aliases": ["chicane", "s serré", "s serre"],
+        "tips": [
+            "Sacrifier légèrement le premier virage pour être bien positionné et rapide dans le second.",
+            "Utiliser les vibreurs avec parcimonie : ils peuvent déséquilibrer la voiture juste avant le changement de direction.",
+            "Anticiper le transfert de masse gauche-droite pour ne pas être surpris par un survirage dans le second virage."
+        ]
+    },
+    "decreasing_radius": {
+        "display_name": "Virage à rayon décroissant",
+        "aliases": ["rayon décroissant", "rayon decroissant", "virage qui se resserre"],
+        "tips": [
+            "Ne pas viser la corde trop tôt : le virage se resserre, donc un point de corde précoce oblige à réduire brutalement en milieu de virage.",
+            "Adopter une trajectoire plus large en entrée pour mieux gérer le resserrement.",
+            "Anticiper un point de corde plus tardif que l'intuition ne le suggère."
+        ]
+    },
+    "off_camber": {
+        "display_name": "Virage en dévers (off-camber)",
+        "aliases": ["dévers", "devers", "off camber", "off-camber"],
+        "tips": [
+            "Réduire légèrement la vitesse d'entrée : le dévers réduit l'adhérence disponible par rapport à un virage classique.",
+            "Être particulièrement progressif sur la remise des gaz, la voiture a naturellement moins de grip.",
+            "Anticiper un décrochage plus rapide qu'attendu si la limite est dépassée."
+        ]
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "discipline": {
+        "key": "rallye",
+        "display_name": "Rallye",
+        "aliases": ["rallye", "rally", "rallycross"]
+    },
+
+    "_meta": {
+        "scope": "Structure générique inspirée du Code Sportif International (FIA) et des filières nationales de rallye. Les démarches précises varient selon le pays/ASN.",
+        "currency_note": "Budgets en euros, ordre de grandeur pour une saison complète (licence + engagements + entretien véhicule + copilote), hors achat du véhicule sauf mention contraire."
+    },
+
+    "pathway": [
+        {
+            "step": 1,
+            "key": "rallye_jeunes",
+            "keywords": ["rallye jeunes", "débuter en rallye", "debuter en rallye", "commencer le rallye", "rallye vtc"],
+            "display_name": "Rallyes régionaux / VTC (Véhicules de Tourisme Course)",
+            "typical_age_min": 18,
+            "license_level": "Licence nationale rallye (permis B requis, souvent complété d'un stage de sécurité)",
+            "prerequisites": [
+                "Permis de conduire B",
+                "Stage de pilotage rallye recommandé voire obligatoire selon la fédération",
+                "Trouver un copilote (ou se former comme copilote soi-même)"
+            ],
+            "estimated_annual_budget_eur": [10000, 30000],
+            "description": "Rallyes d'accès régionaux sur véhicules de série préparés (VTC/Groupe N/R1-R2), plateaux mixtes, bon terrain d'apprentissage de la spécificité rallye (notes, reconnaissances, pilotage sur route fermée).",
+            "next_step_advice": "Travailler la relation avec le copilote et la lecture des notes est aussi important que le pilotage pur à ce stade."
+        },
+        {
+            "step": 2,
+            "key": "national",
+            "keywords": ["championnat national de rallye", "rallye national", "r5", "rally4", "rally3"],
+            "display_name": "Championnat national (Rally4/R2, Rally3/R5 selon les plateaux)",
+            "typical_age_min": 18,
+            "license_level": "Licence nationale confirmée",
+            "prerequisites": [
+                "Expérience acquise en rallyes régionaux",
+                "Véhicule homologué pour la catégorie visée"
+            ],
+            "estimated_annual_budget_eur": [50000, 150000],
+            "description": "Championnats nationaux structurés, souvent support de découverte pour les jeunes talents suivis par les constructeurs.",
+            "next_step_advice": "Les performances en Rally4/Rally3 sont scrutées par les programmes de jeunes pilotes des constructeurs pour l'accès au WRC."
+        },
+        {
+            "step": 3,
+            "key": "championnat_continental",
+            "keywords": ["championnat d'europe", "championnat europe rallye", "erc"],
+            "display_name": "Championnat continental (ex: ERC)",
+            "typical_age_min": 18,
+            "license_level": "Licence internationale",
+            "prerequisites": [
+                "Palmarès solide en championnat national",
+                "Budget structuré, souvent avec appui d'un sponsor ou d'une marque"
+            ],
+            "estimated_annual_budget_eur": [200000, 600000],
+            "description": "Niveau intermédiaire entre le national et le mondial, plateau international, terrain privilégié pour se faire remarquer par les structures WRC.",
+            "next_step_advice": "La régularité sur une saison complète compte davantage qu'un résultat isolé pour attirer l'attention des équipes WRC."
+        },
+        {
+            "step": 4,
+            "key": "wrc",
+            "keywords": ["wrc", "championnat du monde des rallyes", "mondial rallye"],
+            "display_name": "WRC (Championnat du monde des rallyes)",
+            "typical_age_min": 18,
+            "license_level": "Licence internationale Grade A",
+            "prerequisites": [
+                "Palmarès de très haut niveau en championnat continental ou national relevé",
+                "Contrat avec un constructeur ou une équipe engagée en WRC/WRC2"
+            ],
+            "estimated_annual_budget_eur": [500000, 5000000],
+            "description": "Plus haut niveau mondial du rallye. Accès quasi systématiquement via un programme constructeur ou une équipe privée engagée au championnat.",
+            "next_step_advice": "À ce niveau, la carrière dépend autant du réseau et des contrats constructeurs que de la performance pure."
+        }
+    ],
+
+    "common_costs_breakdown": {
+        "license_fee": "Variable selon pays et niveau, généralement modéré pour une licence nationale.",
+        "co_driver": "Poste souvent oublié : rémunération ou partage des frais avec le copilote.",
+        "recce_reconnaissance": "Journées de reconnaissance avant chaque rallye, facturées en plus de l'engagement.",
+        "car_preparation_maintenance": "Poste de dépense principal : entretien et préparation du véhicule après chaque épreuve, les rallyes étant très destructeurs pour le matériel.",
+        "tires": "Poste récurrent lourd, en particulier sur terre où l'usure est rapide."
+    }
+}

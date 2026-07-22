@@ -1,0 +1,94 @@
+{
+    "imola": {
+        "display_name": "Imola",
+        "aliases": ["imola", "autodromo enzo e dino ferrari"],
+        "country": "Italie",
+        "length_km": 4.909,
+        "corners": 19,
+        "description": "Circuit très technique avec peu de marge d'erreur.",
+        "tips": [
+            "Bien sortir de Tamburello.",
+            "Ne pas trop attaquer certains vibreurs.",
+            "Soigner les sorties d'Acque Minerali."
+        ]
+    },
+
+    "spa": {
+        "display_name": "Spa-Francorchamps",
+        "aliases": ["spa", "spa-francorchamps", "spa francorchamps"],
+        "country": "Belgique",
+        "length_km": 7.004,
+        "corners": 20,
+        "description": "Circuit rapide avec de grands changements d'altitude.",
+        "tips": [
+            "Préserver la vitesse dans Eau Rouge.",
+            "Optimiser la traction en sortie de La Source."
+        ]
+    },
+
+    "monza": {
+        "display_name": "Monza",
+        "aliases": ["monza", "autodromo nazionale monza", "temple de la vitesse"],
+        "country": "Italie",
+        "length_km": 5.793,
+        "corners": 11,
+        "description": "Circuit ultra rapide, très faible appui aérodynamique requis.",
+        "tips": [
+            "Optimiser le freinage tardif à la Prima Variante.",
+            "Chercher le meilleur compromis trainée/appui dans les lignes droites.",
+            "Bien négocier la Parabolica pour la vitesse de pointe en sortie."
+        ]
+    },
+
+    "nurburgring_gp": {
+        "display_name": "Nürburgring GP-Strecke",
+        "aliases": ["nurburgring", "nürburgring", "nordschleife gp", "ring"],
+        "country": "Allemagne",
+        "length_km": 5.148,
+        "corners": 15,
+        "description": "Tracé moderne technique, alternance de virages lents et de sections rapides.",
+        "tips": [
+            "Bien négocier le complexe de virages lents dans le premier secteur.",
+            "Optimiser la ligne dans le Dunlop-Kehre pour la vitesse en sortie."
+        ]
+    },
+
+    "silverstone": {
+        "display_name": "Silverstone",
+        "aliases": ["silverstone"],
+        "country": "Royaume-Uni",
+        "length_km": 5.891,
+        "corners": 18,
+        "description": "Circuit rapide et fluide, réputé pour ses enchaînements de courbes à haute vitesse (Maggotts-Becketts-Chapel).",
+        "tips": [
+            "Travailler l'enchaînement Maggotts-Becketts en un seul geste fluide.",
+            "Ne pas sacrifier la vitesse de sortie de Copse pour la ligne droite qui suit."
+        ]
+    },
+
+    "barcelona_catalunya": {
+        "display_name": "Circuit de Barcelone-Catalogne",
+        "aliases": ["barcelone", "catalunya", "barcelona", "circuit de catalogne"],
+        "country": "Espagne",
+        "length_km": 4.657,
+        "corners": 14,
+        "description": "Circuit exigeant en usure pneumatique, mélange de virages rapides et lents.",
+        "tips": [
+            "Gérer l'usure des pneus avant dans la longue courbe 3.",
+            "Optimiser la traction en sortie du dernier virage pour la ligne droite principale."
+        ]
+    },
+
+    "paul_ricard": {
+        "display_name": "Circuit Paul Ricard",
+        "aliases": ["paul ricard", "castellet", "ricard"],
+        "country": "France",
+        "length_km": 5.842,
+        "corners": 15,
+        "description": "Circuit très large avec de nombreux dégagements, permet des trajectoires variées.",
+        "tips": [
+            "Exploiter la largeur de piste pour maximiser le rayon de courbe en sortie.",
+            "Soigner le freinage avant le virage du Signes, très rapide en entrée."
+        ]
+    }
+}

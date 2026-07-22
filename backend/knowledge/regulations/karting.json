@@ -1,0 +1,68 @@
+{
+    "discipline": {
+        "key": "karting",
+        "display_name": "Karting",
+        "aliases": ["karting", "kart", "kartcross"]
+    },
+
+    "_meta": {
+        "scope": "Structure générique inspirée des filières karting classiques (CIK-FIA et fédérations nationales). Les démarches précises (licence, homologation matériel) varient selon le pays.",
+        "currency_note": "Budgets en euros, ordre de grandeur pour une saison complète (licence + châssis/moteur + entretien + engagements), hors investissement initial en matériel si achat plutôt que location."
+    },
+
+    "pathway": [
+        {
+            "step": 1,
+            "key": "initiation",
+            "keywords": ["initiation", "loisir", "débuter en kart", "debuter en kart", "commencer le karting"],
+            "display_name": "Karting loisir / initiation compétition",
+            "typical_age_min": 6,
+            "license_level": "Licence loisir ou licence compétition découverte selon la fédération",
+            "prerequisites": [
+                "Aucune expérience requise",
+                "Passage par un club affilié pour les premières compétitions encadrées"
+            ],
+            "estimated_annual_budget_eur": [2000, 6000],
+            "description": "Karts d'initiation (souvent en location dans un club), premières courses encadrées pour apprendre les bases : trajectoires, dépassements, respect des drapeaux.",
+            "next_step_advice": "Multiplier les sorties en club et viser une régularité au chrono avant de passer en catégorie nationale avec matériel personnel."
+        },
+        {
+            "step": 2,
+            "key": "national",
+            "keywords": ["national", "kart national", "championnat national de karting"],
+            "display_name": "Karting national (catégories type X30, Rotax, OK)",
+            "typical_age_min": 12,
+            "license_level": "Licence nationale compétition",
+            "prerequisites": [
+                "Expérience en initiation/club",
+                "Matériel personnel généralement nécessaire (châssis + moteur homologué)"
+            ],
+            "estimated_annual_budget_eur": [15000, 40000],
+            "description": "Championnats nationaux structurés, plateaux relevés, matériel homologué par catégorie. C'est souvent ici que se joue la suite d'une carrière circuit (repérage par des académies/écuries).",
+            "next_step_advice": "Les résultats ici sont déterminants pour attirer l'attention d'académies de pilotes si l'objectif est la monoplace."
+        },
+        {
+            "step": 3,
+            "key": "international",
+            "keywords": ["international", "kz", "cik-fia", "championnat du monde de karting", "mondial karting"],
+            "display_name": "Karting international (KZ, OK, championnats CIK-FIA)",
+            "typical_age_min": 15,
+            "license_level": "Licence internationale CIK-FIA",
+            "prerequisites": [
+                "Palmarès solide en championnat national",
+                "Souvent un budget structuré autour d'une équipe professionnelle"
+            ],
+            "estimated_annual_budget_eur": [50000, 150000],
+            "description": "Plus haut niveau du karting, considéré comme le vivier principal pour les jeunes pilotes visant la monoplace ou le GT.",
+            "next_step_advice": "À ce stade, la transition vers la monoplace (F4) ou le GT4 se prépare activement selon les résultats et le budget disponible."
+        }
+    ],
+
+    "common_costs_breakdown": {
+        "license_fee": "Modéré, quelques dizaines à centaines d'euros par an selon le niveau.",
+        "chassis_engine": "Poste principal dès le niveau national : achat ou location de châssis et moteur homologués.",
+        "tires_consumables": "Poste récurrent important : les pneus s'usent vite et sont souvent à racheter à chaque week-end de course en compétition sérieuse.",
+        "mechanic_engineer": "De plus en plus courant en national/international pour le réglage moteur et châssis.",
+        "travel_logistics": "Coût souvent sous-estimé : les championnats nationaux/internationaux impliquent des déplacements fréquents."
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "throttle_trace": {
+        "display_name": "Trace d'accélérateur (throttle)",
+        "aliases": ["trace d'accélérateur", "trace accelerateur", "throttle", "courbe d'accélérateur", "courbe accelerateur"],
+        "explanation": "Montre le pourcentage d'accélérateur appliqué dans le temps ou la distance. Une bonne trace vise le 100% le plus tôt et le plus longtemps possible en sortie de virage.",
+        "what_to_look_for": [
+            "Des paliers hésitants (accélérateur qui monte puis redescend) indiquent un manque de confiance ou un problème de traction.",
+            "Comparer deux tours : atteindre le 100% plus tôt sur un tour rapide révèle où le pilote gagne du temps en sortie de virage."
+        ]
+    },
+    "brake_trace": {
+        "display_name": "Trace de freinage",
+        "aliases": ["trace de freinage", "courbe de freinage", "brake trace", "pression de frein"],
+        "explanation": "Montre la pression ou le pourcentage de frein appliqué. Un bon freinage est généralement fort et net au point de freinage, puis relâché progressivement (trail-braking) en approche du virage.",
+        "what_to_look_for": [
+            "Un freinage 'en escalier' (plusieurs pics) indique souvent une hésitation sur le point de freinage.",
+            "Comparer les points de freinage entre deux tours pour identifier où gratter de la distance de freinage en toute sécurité."
+        ]
+    },
+    "speed_trace": {
+        "display_name": "Trace de vitesse",
+        "aliases": ["trace de vitesse", "courbe de vitesse", "speed trace"],
+        "explanation": "Vitesse instantanée du véhicule sur le tour. La comparaison de deux traces de vitesse superposées est l'outil le plus direct pour repérer où un tour est plus rapide qu'un autre.",
+        "what_to_look_for": [
+            "Une vitesse de sortie de virage plus élevée sur un tour de référence indique souvent une meilleure trajectoire ou un meilleur usage de la traction.",
+            "Un écart de vitesse qui apparaît en milieu de ligne droite, sans virage entre les deux, révèle en général un point de freinage différent au virage précédent, pas un problème moteur."
+        ]
+    },
+    "steering_trace": {
+        "display_name": "Angle de volant (steering)",
+        "aliases": ["angle de volant", "trace de volant", "steering trace", "braquage"],
+        "explanation": "Montre l'angle appliqué au volant dans le temps. Une trace fluide et sans à-coups traduit généralement une trajectoire propre.",
+        "what_to_look_for": [
+            "Des corrections fréquentes et saccadées indiquent une perte d'adhérence ou une trajectoire mal engagée.",
+            "Un angle de volant plus faible pour un même virage à vitesse égale traduit souvent une meilleure ligne (plus tendue)."
+        ]
+    },
+    "delta_time": {
+        "display_name": "Delta time (écart de temps cumulé)",
+        "aliases": ["delta", "delta time", "écart de temps", "ecart de temps"],
+        "explanation": "Différence de temps cumulée entre le tour actuel et un tour de référence, affichée en continu. C'est l'outil le plus utile en roulage pour savoir en temps réel si on est en train de gagner ou perdre du temps.",
+        "what_to_look_for": [
+            "Une pente qui monte = on perd du temps sur cette portion par rapport à la référence.",
+            "Se concentrer sur les portions où le delta bouge le plus fort plutôt que sur l'ensemble du tour : c'est là que se trouve le plus gros gain potentiel."
+        ]
+    },
+
+    "general_workflow": {
+        "display_name": "Méthode générale d'analyse télémétrie",
+        "aliases": ["comment analyser ma télémétrie", "comment analyser ma telemetrie", "méthode télémétrie", "methode telemetrie", "comment lire la télémétrie", "comment lire la telemetrie"],
+        "steps": [
+            "Superposer le tour à analyser avec le meilleur tour de référence (le sien ou celui d'un autre pilote).",
+            "Repérer sur le delta time les 2-3 zones où l'écart se creuse le plus.",
+            "Pour chaque zone, comparer freinage, vitesse et accélérateur : c'est presque toujours l'une de ces trois traces qui explique l'écart.",
+            "Ne pas essayer de tout corriger d'un coup : travailler une zone à la fois sur les runs suivants."
+        ]
+    }
+}

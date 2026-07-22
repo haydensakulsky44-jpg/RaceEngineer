@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaceEngineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <span class="nav-marque">Race<span class="point">Engineer</span></span>
+        <div class="nav-liens">
+            <button class="bouton fantome bouton-petit" id="bouton-nouveau-chat" type="button">+ Nouveau chat</button>
+            <button class="bouton fantome bouton-petit" id="bouton-deconnexion" type="button">Déconnexion</button>
+        </div>
+    </nav>
+
+    <div class="page-chat">
+        <div class="chat-journal" id="journal"></div>
+
+        <div class="chat-saisie">
+            <form id="form-saisie">
+                <input type="text" id="saisie-message" placeholder="Pose ta question sport auto..." autocomplete="off" autofocus>
+                <button class="bouton" type="submit">Envoyer</button>
+            </form>
+            <p class="indicateur-frappe" id="indicateur-frappe"></p>
+
+            <div class="suggestions" id="suggestions">
+                <button class="chip" data-exemple="Quelles licences et quel budget pour débuter en karting ?">🏁 Débuter en karting</button>
+                <button class="chip" data-exemple="Ma voiture sous-vire en entrée de virage, comment régler ça ?">🔧 Diagnostic setup</button>
+                <button class="chip" data-exemple="Comment aborder Spa-Francorchamps ?">📍 Un circuit</button>
+                <button class="chip" data-exemple="C'est quoi un drapeau bleu ?">🚦 Règles de course</button>
+                <button class="chip" data-exemple="Comment gérer la pression avant une course ?">💪 Préparation pilote</button>
+                <button class="chip" data-exemple="Comment lire le delta time ?">📊 Télémétrie</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script>
+        document.getElementById("bouton-deconnexion").addEventListener("click", logout);
+    </script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+{
+    "discipline": {
+        "key": "circuit",
+        "display_name": "Circuit",
+        "aliases": ["circuit automobile", "course sur circuit", "circuit gt", "endurance circuit"]
+    },
+
+    "_meta": {
+        "scope": "Structure générique inspirée du Code Sportif International (FIA) et des filières nationales classiques. Les montants et démarches précises varient selon le pays/ASN (Fédération nationale) et doivent être affinés avec des fiches par pays.",
+        "currency_note": "Budgets en euros, ordre de grandeur pour une saison complète (licence + engagements + entretien), hors coût d'achat du véhicule sauf mention contraire."
+    },
+
+    "pathway": [
+        {
+            "step": 1,
+            "key": "rookie",
+            "keywords": ["rookie", "débuter en circuit", "debuter en circuit", "commencer le circuit", "circuit débutant", "circuit debutant"],
+            "display_name": "Championnats Rookie / Proto de découverte",
+            "typical_age_min": 15,
+            "license_level": "Licence nationale débutant (souvent délivrée après un stage de pilotage encadré + examen médical)",
+            "prerequisites": [
+                "Stage de pilotage sur circuit avec un moniteur licencié",
+                "Examen médical d'aptitude (variable selon pays)",
+                "Souvent un test de sécurité (extinction, évacuation du cockpit)"
+            ],
+            "estimated_annual_budget_eur": [8000, 25000],
+            "description": "Point d'entrée en compétition circuit : monoplaces d'initiation ou prototypes de découverte, plateaux encadrés, rythme accessible pour apprendre les bases (trajectoires, drapeaux, départs).",
+            "next_step_advice": "Objectif : décrocher des résultats réguliers dans le top 10 et surtout être propre en course (pas d'accrochages) avant de monter en catégorie."
+        },
+        {
+            "step": 2,
+            "key": "gt4",
+            "keywords": ["gt4"],
+            "display_name": "GT4",
+            "typical_age_min": 16,
+            "license_level": "Licence nationale ou internationale C selon les épreuves",
+            "prerequisites": [
+                "Expérience course déjà acquise (rookie ou karting compétition)",
+                "Bonne compréhension des règles de dépassement et drapeaux"
+            ],
+            "estimated_annual_budget_eur": [40000, 90000],
+            "description": "Vraies voitures de GT de série modifiées, plateaux mixtes pro-am fréquents. Bon compromis performance/coût pour progresser sur du matériel proche du GT3.",
+            "next_step_advice": "Travailler la régularité au tour et la gestion de course longue durée (endurance) avant d'envisager le GT3."
+        },
+        {
+            "step": 3,
+            "key": "gt3",
+            "keywords": ["gt3"],
+            "display_name": "GT3",
+            "typical_age_min": 17,
+            "license_level": "Licence internationale (Grade C ou B selon les épreuves, Grade A pour les plus relevées)",
+            "prerequisites": [
+                "Palmarès solide en GT4 ou monoplace",
+                "Souvent un test/évaluation par l'équipe ou le constructeur"
+            ],
+            "estimated_annual_budget_eur": [150000, 500000],
+            "description": "Catégorie reine du GT client. Programmes très professionnalisés (ingénieurs dédiés, données télémétriques poussées, coaching). Accès généralement via des équipes qui louent ou engagent des pilotes.",
+            "next_step_advice": "À ce niveau, le réseau (équipes, constructeurs) compte autant que la performance pure."
+        },
+        {
+            "step": 4,
+            "key": "single_seater",
+            "keywords": ["monoplace", "f4", "f3", "f2", "formule 1", "f1"],
+            "display_name": "Monoplace (F4 → F3 → F2 → F1)",
+            "typical_age_min": 15,
+            "license_level": "Licence internationale Grade A obligatoire pour la F2/F1 (Superlicence FIA pour la F1, avec système de points)",
+            "prerequisites": [
+                "Karting compétition dès le plus jeune âge, généralement indispensable",
+                "Passage F4 quasi systématique avant F3",
+                "Points de Superlicence FIA à accumuler pour viser la F1"
+            ],
+            "estimated_annual_budget_eur": [200000, 3000000],
+            "description": "Filière la plus exigeante et la plus chère, fortement dépendante des résultats en karting dès le plus jeune âge et d'un soutien financier ou d'une académie de pilotes (constructeur/écurie).",
+            "next_step_advice": "Le budget explose à chaque échelon. La recherche de sponsors/académies devient centrale dès la F4."
+        }
+    ],
+
+    "license_grades_fia_reference": {
+        "note": "Grille de référence FIA (Code Sportif International), simplifiée. Chaque ASN nationale a ses propres équivalences et démarches d'obtention.",
+        "grade_C": "Compétitions nationales et régionales.",
+        "grade_B": "Certaines compétitions internationales (accès progressif).",
+        "grade_A": "Compétitions internationales de haut niveau (F2, F3, WEC, etc.).",
+        "superlicence_f1": "Système de points FIA cumulés sur les catégories précédentes, requis pour concourir en F1."
+    },
+
+    "common_costs_breakdown": {
+        "license_fee": "Variable selon pays et niveau, généralement quelques centaines d'euros par an pour une licence nationale.",
+        "medical_exam": "Souvent requis annuellement, coût modéré.",
+        "team_seat_or_car_rental": "Poste de dépense principal à partir du GT4 : location d'un baquet dans une équipe engagée.",
+        "testing_days": "Journées d'essais privés, facturées à la journée, indispensables pour progresser.",
+        "coaching_data_engineer": "De plus en plus courant même en catégories intermédiaires."
+    }
+}

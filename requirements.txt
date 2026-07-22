@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic[email]
+anthropic
+python-dotenv
+sqlalchemy
+psycopg2-binary
+bcrypt
+python-jose[cryptography]
+slowapi

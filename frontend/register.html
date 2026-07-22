@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte — RaceEngineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a class="nav-marque" href="index.html">Race<span class="point">Engineer</span></a>
+        <div class="nav-liens">
+            <a class="nav-lien" href="login.html">Connexion</a>
+        </div>
+    </nav>
+    <div class="bande-damier"></div>
+
+    <div class="page-centree">
+        <div class="carte-formulaire">
+            <h1>Créer un compte</h1>
+            <p class="sous-titre">Rejoins RaceEngineer, c'est gratuit.</p>
+
+            <div class="message-erreur" id="erreur"></div>
+
+            <form id="form-inscription">
+                <div class="champ">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="toi@exemple.com">
+                </div>
+                <div class="champ">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required minlength="8" autocomplete="new-password" placeholder="8 caractères minimum">
+                </div>
+                <button class="bouton" type="submit" id="bouton-submit" style="width: 100%;">Créer mon compte</button>
+            </form>
+
+            <p class="lien-secondaire">Déjà un compte ? <a href="login.html" id="lien-connexion">Se connecter</a></p>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const redirect = params.get("redirect");
+            if (redirect) {
+                document.getElementById("lien-connexion").href =
+                    `login.html?redirect=${encodeURIComponent(redirect)}`;
+            }
+        })();
+    </script>
+    <script>
+        const form = document.getElementById("form-inscription");
+        const erreurBox = document.getElementById("erreur");
+        const boutonSubmit = document.getElementById("bouton-submit");
+
+        function destinationApresConnexion() {
+            const params = new URLSearchParams(window.location.search);
+            const redirect = params.get("redirect");
+            return redirect ? redirect : "chat.html";
+        }
+
+        // Si déjà connecté, inutile de repasser par l'inscription
+        if (isLoggedIn()) {
+            window.location.href = destinationApresConnexion();
+        }
+
+        function afficherErreur(texte) {
+            erreurBox.textContent = texte;
+            erreurBox.classList.add("visible");
+        }
+
+        function cacherErreur() {
+            erreurBox.classList.remove("visible");
+        }
+
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            cacherErreur();
+
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+
+            boutonSubmit.disabled = true;
+            boutonSubmit.textContent = "Création en cours...";
+
+            try {
+                await apiRegister(email, password);
+                // Compte créé -> on connecte directement pour éviter une étape en trop
+                await apiLogin(email, password);
+                window.location.href = destinationApresConnexion();
+            } catch (err) {
+                afficherErreur(err.message);
+                boutonSubmit.disabled = false;
+                boutonSubmit.textContent = "Créer mon compte";
+            }
+        });
+    </script>
+</body>
+</html>

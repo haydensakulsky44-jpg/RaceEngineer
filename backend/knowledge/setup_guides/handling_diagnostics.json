@@ -1,0 +1,95 @@
+{
+    "_meta": {
+        "scope": "Diagnostics génériques applicables à la majorité des voitures à roues couvertes (GT/monoplace). Les réglages précis dépendent toujours de la voiture ; ceci donne la direction à prendre, pas des valeurs chiffrées universelles."
+    },
+
+    "understeer_entry": {
+        "display_name": "Sous-virage en entrée de virage",
+        "symptoms": ["la voiture ne tourne pas assez au freinage", "elle continue tout droit en entrée"],
+        "likely_causes": [
+            "Trop d'appui/rigidité à l'avant relativement à l'arrière",
+            "Répartition de freinage trop orientée vers l'avant",
+            "Vitesse d'entrée trop élevée pour l'adhérence disponible"
+        ],
+        "adjustments": [
+            "Reculer légèrement la répartition de freinage vers l'arrière",
+            "Assouplir la barre anti-roulis avant ou raidir celle de l'arrière",
+            "Augmenter légèrement le carrossage négatif avant",
+            "Revoir le point de freinage : parfois le problème est le pilotage, pas le setup"
+        ]
+    },
+
+    "understeer_mid": {
+        "display_name": "Sous-virage au milieu du virage",
+        "symptoms": ["la voiture pousse au milieu du virage", "manque de grip avant en appui"],
+        "likely_causes": [
+            "Pression de pneus avant trop élevée ou trop basse",
+            "Manque d'appui aérodynamique avant relatif à l'arrière",
+            "Barres anti-roulis mal équilibrées"
+        ],
+        "adjustments": [
+            "Ajuster la pression des pneus avant (tester +/- 0.2 bar)",
+            "Augmenter l'appui avant (splitter/aileron avant si réglable)",
+            "Réduire légèrement la rigidité de la barre anti-roulis avant"
+        ]
+    },
+
+    "understeer_exit": {
+        "display_name": "Sous-virage en sortie de virage",
+        "symptoms": ["la voiture ne se replace pas à l'accélération", "manque de rotation en sortie"],
+        "likely_causes": [
+            "Différentiel trop fermé en accélération",
+            "Trop de puissance appliquée trop tôt pour l'appui disponible"
+        ],
+        "adjustments": [
+            "Ouvrir légèrement le différentiel en accélération",
+            "Retarder très légèrement la remise des gaz",
+            "Vérifier l'équilibre aéro global (trop d'appui arrière peut aussi masquer un manque avant)"
+        ]
+    },
+
+    "oversteer_entry": {
+        "display_name": "Survirage en entrée de virage",
+        "symptoms": ["l'arrière décroche au freinage/tourné de volant", "instabilité au trail-braking"],
+        "likely_causes": [
+            "Répartition de freinage trop orientée vers l'arrière",
+            "Barre anti-roulis arrière trop rigide",
+            "Amortisseurs arrière trop souples en détente"
+        ],
+        "adjustments": [
+            "Avancer légèrement la répartition de freinage vers l'avant",
+            "Assouplir la barre anti-roulis arrière",
+            "Revoir le trail-braking : relâcher le frein plus progressivement"
+        ]
+    },
+
+    "oversteer_mid": {
+        "display_name": "Survirage au milieu du virage",
+        "symptoms": ["l'arrière glisse en appui constant", "manque de confiance en milieu de courbe"],
+        "likely_causes": [
+            "Manque d'appui aérodynamique arrière relatif à l'avant",
+            "Pression de pneus arrière inadaptée",
+            "Carrossage arrière excessif"
+        ],
+        "adjustments": [
+            "Augmenter l'appui arrière (aileron si réglable)",
+            "Ajuster la pression des pneus arrière",
+            "Réduire légèrement le carrossage négatif arrière"
+        ]
+    },
+
+    "oversteer_exit": {
+        "display_name": "Survirage en sortie de virage (perte de traction)",
+        "symptoms": ["l'arrière décroche à l'accélération", "difficile de remettre les gaz tôt"],
+        "likely_causes": [
+            "Différentiel trop fermé en accélération (surtout sur mouillé ou peu de grip)",
+            "Trop de puissance délivrée trop brutalement",
+            "Manque de charge sur l'essieu arrière"
+        ],
+        "adjustments": [
+            "Ouvrir le différentiel en accélération",
+            "Travailler la progressivité de la remise des gaz",
+            "Revoir la répartition de masse/carburant si réglable"
+        ]
+    }
+}

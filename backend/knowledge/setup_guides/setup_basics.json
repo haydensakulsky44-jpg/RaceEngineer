@@ -1,0 +1,60 @@
+{
+    "ride_height": {
+        "display_name": "Garde au sol (ride height)",
+        "role": "Influence le centre de gravité et l'efficacité aérodynamique (effet de sol). Plus bas = généralement plus rapide mais plus sensible aux vibreurs/bosses.",
+        "priority_to_optimize": "moyenne"
+    },
+    "camber": {
+        "display_name": "Carrossage",
+        "role": "Angle de la roue par rapport à la verticale. Plus de carrossage négatif = meilleure adhérence en virage mais usure inégale et moins de grip en ligne droite.",
+        "priority_to_optimize": "haute"
+    },
+    "toe": {
+        "display_name": "Parallélisme (toe)",
+        "role": "Angle des roues vues du dessus. Affecte la stabilité en ligne droite et la réactivité en entrée de virage.",
+        "priority_to_optimize": "moyenne"
+    },
+    "anti_roll_bar": {
+        "display_name": "Barre anti-roulis (ARB)",
+        "role": "Contrôle le transfert de masse latéral avant/arrière. Le levier le plus direct pour ajuster l'équilibre sous-virage/survirage.",
+        "priority_to_optimize": "haute"
+    },
+    "differential": {
+        "display_name": "Différentiel",
+        "role": "Gère la répartition de couple entre les roues motrices. Impact majeur sur la traction en sortie de virage et la stabilité au freinage moteur.",
+        "priority_to_optimize": "haute"
+    },
+    "brake_bias": {
+        "display_name": "Répartition de freinage",
+        "role": "Répartition avant/arrière de la force de freinage. Levier rapide pour corriger sous-virage/survirage en entrée de virage.",
+        "priority_to_optimize": "haute"
+    },
+    "tire_pressure": {
+        "display_name": "Pression des pneus",
+        "role": "Détermine la taille de la zone de contact et la montée en température. Souvent le réglage le plus rentable en temps passé/gain obtenu.",
+        "priority_to_optimize": "très haute"
+    },
+    "aero_wing": {
+        "display_name": "Aileron / appui aérodynamique",
+        "role": "Équilibre l'appui avant/arrière à haute vitesse. Plus d'appui = plus de grip en virage rapide mais perte de vitesse de pointe.",
+        "priority_to_optimize": "haute"
+    },
+    "dampers": {
+        "display_name": "Amortisseurs (compression/détente)",
+        "role": "Contrôle la vitesse de transfert de masse et l'absorption des irrégularités. Réglage fin, à travailler après les bases (pressions, ARB, diff).",
+        "priority_to_optimize": "basse à moyenne (à affiner en dernier)"
+    },
+
+    "optimization_priority_order": [
+        "tire_pressure",
+        "brake_bias",
+        "anti_roll_bar",
+        "differential",
+        "camber",
+        "aero_wing",
+        "toe",
+        "ride_height",
+        "dampers"
+    ],
+    "optimization_priority_note": "Ordre indicatif pour un pilote qui découvre le réglage : commencer par ce qui donne le plus de gain de temps pour le moins d'effort/risque de dérégler la voiture."
+}

@@ -1,0 +1,82 @@
+{
+    "ferrari_488_gt3": {
+        "display_name": "Ferrari 488 GT3",
+        "aliases": ["ferrari", "ferrari 488", "488 gt3", "488"],
+        "category": "GT3",
+        "manufacturer": "Ferrari",
+        "drivetrain": "RWD",
+        "notes": "Bon équilibre, aime les setups orientés traction en sortie de virage."
+    },
+
+    "red_bull_rb": {
+        "display_name": "Red Bull RB (F1)",
+        "aliases": ["red bull", "rb", "redbull"],
+        "category": "F1",
+        "manufacturer": "Red Bull Racing",
+        "drivetrain": "RWD",
+        "notes": "Monoplace, forte dépendance à l'appui aérodynamique et à la température des pneus."
+    },
+
+    "bmw_m4_gt3": {
+        "display_name": "BMW M4 GT3",
+        "aliases": ["bmw", "bmw m4", "m4 gt3", "m4"],
+        "category": "GT3",
+        "manufacturer": "BMW",
+        "drivetrain": "RWD",
+        "notes": "Voiture stable, plutôt tolérante sur les setups, bon point de départ pour progresser."
+    },
+
+    "porsche_992_gt3_r": {
+        "display_name": "Porsche 911 GT3 R (992)",
+        "aliases": ["porsche", "911 gt3 r", "gt3 r", "992"],
+        "category": "GT3",
+        "manufacturer": "Porsche",
+        "drivetrain": "RWD",
+        "notes": "Moteur en porte-à-faux arrière, comportement particulier en trail-braking."
+    },
+
+    "audi_r8_lms_gt3": {
+        "display_name": "Audi R8 LMS GT3 evo II",
+        "aliases": ["audi", "audi r8", "r8 lms", "r8"],
+        "category": "GT3",
+        "manufacturer": "Audi",
+        "drivetrain": "RWD",
+        "notes": "Très prévisible, souvent recommandée pour apprendre les bases du GT3."
+    },
+
+    "mclaren_720s_gt3": {
+        "display_name": "McLaren 720S GT3",
+        "aliases": ["mclaren", "mclaren 720s", "720s", "720s gt3"],
+        "category": "GT3",
+        "manufacturer": "McLaren",
+        "drivetrain": "RWD",
+        "notes": "Bon appui aérodynamique, exige un travail précis sur l'équilibre freinage."
+    },
+
+    "mercedes_amg_gt3": {
+        "display_name": "Mercedes-AMG GT3 evo",
+        "aliases": ["mercedes", "amg gt3", "mercedes amg"],
+        "category": "GT3",
+        "manufacturer": "Mercedes-AMG",
+        "drivetrain": "RWD",
+        "notes": "Solide sur l'appui à haute vitesse, un peu moins agile dans les enchaînements serrés."
+    },
+
+    "aston_martin_vantage_gt4": {
+        "display_name": "Aston Martin Vantage GT4",
+        "aliases": ["aston martin", "vantage", "vantage gt4"],
+        "category": "GT4",
+        "manufacturer": "Aston Martin",
+        "drivetrain": "RWD",
+        "notes": "Référence GT4, comportement sain, bon choix pour progresser avant le GT3."
+    },
+
+    "toyota_gr86_gt4": {
+        "display_name": "Toyota GR86 GT4",
+        "aliases": ["toyota", "gr86", "gr86 gt4", "86 gt4"],
+        "category": "GT4",
+        "manufacturer": "Toyota",
+        "drivetrain": "RWD",
+        "notes": "Moins puissante mais très formatrice : oblige à soigner les trajectoires pour compenser le déficit de puissance."
+    }
+}

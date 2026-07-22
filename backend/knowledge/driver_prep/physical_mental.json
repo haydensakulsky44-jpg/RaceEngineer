@@ -1,0 +1,40 @@
+{
+    "physical_neck_cardio": {
+        "display_name": "Préparation physique : cou, cardio, gainage",
+        "aliases": ["préparation physique", "preparation physique", "cardio", "musculation pilote", "renforcement cou", "gainage", "se préparer physiquement", "preparer physiquement", "entrainement physique", "entraînement physique"],
+        "tips": [
+            "Le renforcement du cou est prioritaire : les forces latérales en virage rapide sont considérables et fatiguent vite un cou non préparé.",
+            "Le cardio (course à pied, vélo, rameur) améliore la résistance à la fatigue sur les longues courses et aide à récupérer plus vite entre les runs.",
+            "Le gainage (abdos, lombaires) stabilise le buste et améliore la précision des gestes au volant sur la durée.",
+            "La préhension (force des avant-bras/mains) compte aussi : un volant lourd en fin de course fatigue vite un pilote non préparé."
+        ]
+    },
+    "hydration_nutrition": {
+        "display_name": "Hydratation et nutrition en course",
+        "aliases": ["hydratation", "nutrition pilote", "alimentation pilote", "boire en course"],
+        "tips": [
+            "La déshydratation dégrade les réflexes et la concentration bien avant la sensation de soif : boire régulièrement avant, pas seulement pendant.",
+            "Éviter les repas lourds avant une session : privilégier des apports digestes et énergétiques (glucides complexes, fruits).",
+            "En endurance, prévoir une stratégie d'hydratation/alimentation pendant la course elle-même, pas seulement aux arrêts."
+        ]
+    },
+    "mental_preparation": {
+        "display_name": "Préparation mentale et gestion du stress",
+        "aliases": ["préparation mentale", "preparation mentale", "stress", "gestion du stress", "concentration", "pression en course"],
+        "tips": [
+            "La visualisation (repasser mentalement le tracé et les points de freinage avant de rouler) améliore la mémorisation et réduit le stress initial.",
+            "Une routine pré-course fixe (échauffement, respiration, ordre des gestes) aide à retrouver un état de concentration stable même sous pression.",
+            "Accepter qu'une erreur est déjà passée : ruminer une faute pendant les tours suivants coûte plus de temps que l'erreur elle-même.",
+            "La respiration contrôlée (expirations longues) avant un départ ou un restart aide à faire baisser le rythme cardiaque et à clarifier les décisions."
+        ]
+    },
+    "sleep_recovery": {
+        "display_name": "Sommeil et récupération",
+        "aliases": ["sommeil", "récupération", "recuperation", "fatigue pilote"],
+        "tips": [
+            "Le manque de sommeil dégrade les temps de réaction de façon comparable à l'alcool à partir d'un certain seuil de privation.",
+            "Sur un week-end de course, prioriser la régularité du sommeil plutôt que de rattraper une grosse nuit en une fois.",
+            "La récupération active (marche légère, étirements) entre les sessions aide à maintenir la fraîcheur mentale sur une journée chargée."
+        ]
+    }
+}
