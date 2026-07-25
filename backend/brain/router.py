@@ -26,7 +26,6 @@ def route(message: str, user_id: int, db) -> str:
         "general": None,
     }
 
-    # 🧠 Mémoire simple (voiture du pilote)
     if "je roule en" in message_lower:
         raw_car = message_lower.replace("je roule en", "").strip()
         car_key = find_car(raw_car)
@@ -39,31 +38,24 @@ def route(message: str, user_id: int, db) -> str:
         set_memory(db, user_id, "car", raw_car)
         return f"Ok, je retiens que tu roules en {raw_car} (voiture pas encore dans ma base de connaissances)."
 
-    # Greeting
     if intent["greeting"]:
         responses["general"] = greeting()
 
-    # Diagnostic sous-virage / survirage (prioritaire sur le setup générique)
     if intent["handling_diagnostic"]:
         responses["diagnostic"] = diagnostic_response(intent["handling_diagnostic"])
 
-    # Conseils de trajectoire par type de virage
     if intent["corner_type"]:
         responses["corner_tip"] = driving_tips.handle(intent["corner_type"])
 
-    # Règles de course (drapeaux, dépassements, pénalités)
     if intent["race_rule"]:
         responses["race_rule"] = race_rules.handle(intent["race_rule"])
 
-    # Préparation physique/mentale du pilote
     if intent["driver_prep_topic"]:
         responses["driver_prep"] = driver_prep.handle(intent["driver_prep_topic"])
 
-    # "Par où commencer pour gagner du temps" -> ordre de priorité des réglages
     if intent["priority_advice"]:
         responses["priority_advice"] = priority_advice()
 
-    # Setup intelligent (voiture + circuit résolus via le knowledge_loader)
     if intent["setup"] and not responses["diagnostic"]:
         car_key = intent["car"] or get_memory(db, user_id, "car")
         circuit_key = intent["circuit"]
@@ -80,18 +72,18 @@ def route(message: str, user_id: int, db) -> str:
         car_msg = f"Tu roules en {car_infos['display_name']}. " if car_infos else ""
         responses["setup"] = car_msg + setup()
 
-    # Télémétrie : sujet pédagogique précis, sinon message générique
     if intent["telemetry_topic"]:
         responses["telemetry"] = telemetry_topic_response(intent["telemetry_topic"])
     elif intent["telemetry"]:
         responses["telemetry"] = telemetry()
 
-    # Orientation (licences, coûts, réglementation, filière karting/circuit/rallye)
     if intent["orientation"]:
         responses["orientation"] = orientation.handle(message_lower)
 
-    # Circuits (clé déjà résolue par le parser)
-    if intent["circuit"]:
+    show_bare_circuit = intent["circuit"] and not (
+        intent["performance_question"] and not intent["setup"]
+    )
+    if show_bare_circuit:
         responses["circuit"] = circuits.handle(intent["circuit"])
 
     ordered = []
@@ -103,9 +95,6 @@ def route(message: str, user_id: int, db) -> str:
             ordered.append(responses[key])
 
     if not ordered:
-        # Repli LLM : aucun module basé sur des règles n'a su répondre.
-        # On transmet le contexte connu (ex: la voiture du pilote en mémoire)
-        # pour que le LLM ne reparte pas de zéro.
         car_key = get_memory(db, user_id, "car")
         car_infos = get_car(car_key) if car_key else None
         car_display_name = car_infos["display_name"] if car_infos else car_key

@@ -33,25 +33,40 @@ PRIORITY_WORDS = [
     "quoi régler en premier", "quoi regler en premier", "commencer par quoi",
     "gagner du temps",
 ]
+PERFORMANCE_ADVICE_WORDS = [
+    "comment progresser", "comment m'améliorer", "comment ameliorer",
+    "comment aller plus vite", "comment être plus rapide", "comment etre plus rapide",
+    "conseils pour piloter", "comment performer", "comment gagner du temps en",
+    "comment gagner du temps avec", "conseil pour", "conseils pour",
+    "des conseils pour", "comment être compétitif", "comment etre competitif",
+]
 
 
 def parse_message(message: str) -> dict:
     message_lower = message.lower()
 
+    car = find_car(message_lower)
+    performance_question = any(word in message_lower for word in PERFORMANCE_ADVICE_WORDS)
+
+    explicit_orientation_words = any(word in message_lower for word in ORIENTATION_WORDS)
+    pathway_match = mentions_pathway_topic(message_lower)
+
+    orientation_triggered = explicit_orientation_words or (pathway_match and car is None)
+
     intent = {
         "setup": any(word in message_lower for word in SETUP_WORDS),
         "telemetry": any(word in message_lower for word in TELEMETRY_WORDS),
-        "orientation": any(word in message_lower for word in ORIENTATION_WORDS)
-        or mentions_pathway_topic(message_lower),
+        "orientation": orientation_triggered,
         "greeting": any(word in message_lower for word in GREETING_WORDS),
         "priority_advice": any(word in message_lower for word in PRIORITY_WORDS),
         "circuit": find_circuit(message_lower),
-        "car": find_car(message_lower),
+        "car": car,
         "handling_diagnostic": find_handling_diagnostic(message_lower),
         "corner_type": find_corner_type(message_lower),
         "race_rule": find_race_rule(message_lower),
         "driver_prep_topic": find_driver_prep_topic(message_lower),
         "telemetry_topic": find_telemetry_topic(message_lower),
+        "performance_question": performance_question,
     }
 
     return intent
