@@ -12,30 +12,37 @@
       "L'aspiration dans la ligne droite de Kemmel est cruciale pour les dépassements."
     ],
     "key_corners": [
-      {
-        "name": "La Source",
-        "number": "T1",
-        "advice": "Épingle très lente. Freine tard, garde la corde tardive (late apex) pour maximiser la vitesse de sortie."
-      },
-      {
-        "name": "Eau Rouge / Raidillon",
-        "number": "T2-T3-T4",
-        "advice": "Compression extrême. Lève légèrement le pied avant de tourner si la voiture manque d'appui (comme en GT4), évite de freiner brusquement en appui sous peine de perdre l'arrière."
-      },
-      {
-        "name": "Pouhon",
-        "number": "T10-T11",
-        "advice": "Double gauche aveugle très rapide. Rétrograde d'un rapport pour faire pivoter la voiture et remets les gaz avant même le deuxième point de corde."
-      },
-      {
-        "name": "Bus Stop Chicanes",
-        "number": "T19-T20",
-        "advice": "Gros freinage en descente. Utilise les vibreurs avec précaution, surtout avec les Hypercars qui peuvent décoller."
-      }
+      {"name": "La Source", "number": "T1", "advice": "Épingle très lente. Freine tard, garde la corde tardive (late apex) pour maximiser la vitesse de sortie."},
+      {"name": "Eau Rouge / Raidillon", "number": "T2-T3-T4", "advice": "Compression extrême. Lève légèrement le pied avant de tourner si la voiture manque d'appui (comme en GT4), évite de freiner brusquement en appui sous peine de perdre l'arrière."},
+      {"name": "Pouhon", "number": "T10-T11", "advice": "Double gauche aveugle très rapide. Rétrograde d'un rapport pour faire pivoter la voiture et remets les gaz avant même le deuxième point de corde."},
+      {"name": "Bus Stop Chicanes", "number": "T19-T20", "advice": "Gros freinage en descente. Utilise les vibreurs avec précaution, surtout avec les Hypercars qui peuvent décoller."}
     ],
     "elevation_profile": "Dénivelé extrême (plus de 100m entre le point le plus haut et le plus bas). Grosse compression à l'Eau Rouge.",
     "surface_grip": "Élevé sur le sec, mais devient une patinoire hors trajectoire sous la pluie.",
-    "weather_notes": "Microclimat ardennais : il peut pleuvoir sur le secteur 2 (Blanchimont) pendant que les stands sont totalement secs."
+    "weather_notes": "Microclimat ardennais : il peut pleuvoir sur le secteur 2 (Blanchimont) pendant que les stands sont totalement secs.",
+    "ideal_downforce": {
+      "GT3": "Medium-Low",
+      "Hypercar": "Medium",
+      "GT4": "Medium"
+    },
+    "tyre_wear": "Medium-High",
+    "brake_wear": "Low",
+    "fuel_consumption": "High",
+    "overtaking": ["T1 (La Source)", "T5 (Les Combes)", "T19 (Bus Stop)"],
+    "best_setup": {
+      "wing": "Medium-Low",
+      "arb_front": "Stiff",
+      "arb_rear": "Medium",
+      "ride_height": "Medium (pour absorber la compression du Raidillon)"
+    },
+    "common_mistakes": [
+      "Talonner au Raidillon en réglant la hauteur de caisse trop basse.",
+      "Freiner trop tard à l'arrêt de bus (T19) avec des pneus refroidis par la ligne droite de Blanchimont.",
+      "Générer trop de sous-virage à Pouhon à cause d'une aéro trop déchargée."
+    ],
+    "track_limits": "Moyennes (Attention à la sortie du Raidillon et Blanchimont)",
+    "rain_rating": "Très difficile",
+    "difficulty": 8
   },
 
   "le_mans": {
@@ -51,30 +58,36 @@
       "Gère tes freins : les longues lignes droites les refroidissent trop, attention au blocage au premier freinage."
     ],
     "key_corners": [
-      {
-        "name": "Chicanes des Hunaudières (Daytona / Michelin)",
-        "number": "T8-T11",
-        "advice": "Freinages massifs depuis 300+ km/h. Monte fort sur les freins (dégressif) mais garde la voiture bien droite avant de braquer."
-      },
-      {
-        "name": "Mulsanne",
-        "number": "T12",
-        "advice": "Épingle serrée avec une grosse bosse au freinage. Attention au transfert de masse et au sous-virage en sortie."
-      },
-      {
-        "name": "Indianapolis",
-        "number": "T13-T14",
-        "advice": "Le virage le plus terrifiant. Entrée à droite à l'aveugle à très haute vitesse, suivie d'un gros freinage en appui pour le gauche."
-      },
-      {
-        "name": "Virages Porsche",
-        "number": "T23-T27",
-        "advice": "Enchaînement ultra-rapide. Exige de la fluidité au volant et un aérodynamisme parfait. Ne touche pas aux vibreurs intérieurs sous peine de déstabiliser l'auto."
-      }
+      {"name": "Chicanes des Hunaudières", "number": "T8-T11", "advice": "Freinages massifs depuis 300+ km/h. Monte fort sur les freins (dégressif) mais garde la voiture bien droite avant de braquer."},
+      {"name": "Mulsanne", "number": "T12", "advice": "Épingle serrée avec une grosse bosse au freinage. Attention au transfert de masse et au sous-virage en sortie."},
+      {"name": "Virages Porsche", "number": "T23-T27", "advice": "Enchaînement ultra-rapide. Exige de la fluidité au volant et un aérodynamisme parfait. Ne touche pas aux vibreurs intérieurs sous peine de déstabiliser l'auto."}
     ],
     "elevation_profile": "Légèrement vallonné, avec une descente prononcée vers Indianapolis et une bosse piégeuse avant Mulsanne.",
     "surface_grip": "Évolutif. Les routes publiques sont poussiéreuses en début de session (peu de grip), la piste s'améliore énormément (rubber in) au fil de la course.",
-    "weather_notes": "La nuit, les températures chutent, modifiant la pression des pneus. Le brouillard matinal est fréquent."
+    "weather_notes": "La nuit, les températures chutent, modifiant la pression des pneus. Le brouillard matinal est fréquent.",
+    "ideal_downforce": {
+      "GT3": "Low",
+      "Hypercar": "Very Low",
+      "GT4": "Low"
+    },
+    "tyre_wear": "Medium",
+    "brake_wear": "Medium-High",
+    "fuel_consumption": "Very High",
+    "overtaking": ["Chicanes des Hunaudières", "Mulsanne", "Indianapolis"],
+    "best_setup": {
+      "wing": "Minimum",
+      "arb_front": "Medium-Stiff",
+      "arb_rear": "Medium",
+      "ride_height": "Low (mais attention à la bosse de Mulsanne)"
+    },
+    "common_mistakes": [
+      "Bloquer les roues au freinage de Mulsanne à cause de freins trop froids.",
+      "Mordre les vibreurs intérieurs dans les virages Porsche (perte d'adhérence immédiate).",
+      "Ne pas ajuster la répartition de freinage (Brake Bias) vers l'arrière avant les grosses chicanes."
+    ],
+    "track_limits": "Tolérantes (Sauf chicane Ford)",
+    "rain_rating": "Extrême (Visibilité quasi-nulle la nuit)",
+    "difficulty": 9
   },
 
   "monza": {
@@ -86,67 +99,40 @@
     "description": "Le Temple de la Vitesse. Un tracé ultra-rapide entrecoupé de trois chicanes lentes exigeant de gros freinages et de la motricité.",
     "tips": [
       "Aileron braqué au minimum vital. Tout se joue sur la vitesse dans les lignes droites.",
-      "Garde un setup de suspension assez souple pour pouvoir absorber violemment les vibreurs des chicanes (Ascari surtout).",
+      "Garde un setup de suspension assez souple pour pouvoir absorber violemment les vibreurs des chicanes.",
       "Le trail-braking est essentiel pour inscrire l'avant dans les chicanes malgré le manque d'appui aéro."
     ],
     "key_corners": [
-      {
-        "name": "Prima Variante",
-        "number": "T1-T2",
-        "advice": "Freinage le plus dur du circuit. Prends beaucoup de vibreur à l'intérieur du T1, mais attention à la saucisse dissuasive en sortie de T2."
-      },
-      {
-        "name": "Variante Ascari",
-        "number": "T8-T9-T10",
-        "advice": "L'endroit où tu gagnes ou perds ton chrono. Rentre vite, utilise le vibreur plat au centre, et mets plein gaz très tôt pour la ligne droite suivante."
-      },
-      {
-        "name": "Curva Parabolica (Alboreto)",
-        "number": "T11",
-        "advice": "Freine un peu plus tôt qu'il n'y paraît, plonge à la corde très tôt, puis laisse la voiture s'élargir naturellement sur le dégagement asphalté en sortie."
-      }
+      {"name": "Prima Variante", "number": "T1-T2", "advice": "Freinage le plus dur du circuit. Prends beaucoup de vibreur à l'intérieur du T1, mais attention à la saucisse dissuasive en sortie de T2."},
+      {"name": "Variante Ascari", "number": "T8-T9-T10", "advice": "Rentre vite, utilise le vibreur plat au centre, et mets plein gaz très tôt pour la ligne droite suivante."},
+      {"name": "Curva Parabolica", "number": "T11", "advice": "Freine un peu plus tôt qu'il n'y paraît, plonge à la corde très tôt, puis laisse la voiture s'élargir sur l'extérieur."}
     ],
     "elevation_profile": "Quasiment plat.",
     "surface_grip": "Grip moyen. Les zones de freinage deviennent très gommées et adhérentes au fil de la course.",
-    "weather_notes": "Souvent chaud et ensoleillé, attention à la surchauffe des pneus arrière en motricité sortant des chicanes lentes."
-  },
-
-  "paul_ricard": {
-    "display_name": "Circuit Paul Ricard",
-    "aliases": ["paul ricard", "le castellet", "ricard"],
-    "country": "France",
-    "length_km": 5.842,
-    "corners": 15,
-    "description": "Un circuit très technique avec d'immenses dégagements asphalte (run-offs rayés). Il combine une ligne droite vertigineuse avec un dernier secteur très sinueux.",
-    "tips": [
-      "Respecte les limites de piste (track limits) dans les lignes bleues/rouges, sous peine de pénalité instantanée ou d'usure anormale.",
-      "Un setup intermédiaire est idéal : l'appui te fera gagner beaucoup de temps dans le secteur 3, même si tu perds un peu dans le Mistral."
+    "weather_notes": "Souvent chaud et ensoleillé, attention à la surchauffe des pneus arrière en motricité sortant des chicanes lentes.",
+    "ideal_downforce": {
+      "GT3": "Minimum",
+      "Hypercar": "Minimum",
+      "GT4": "Low"
+    },
+    "tyre_wear": "Low (sauf surchauffe arrière)",
+    "brake_wear": "Very High",
+    "fuel_consumption": "High",
+    "overtaking": ["T1 (Prima Variante)", "T4 (Roggia)"],
+    "best_setup": {
+      "wing": "Minimum",
+      "arb_front": "Soft",
+      "arb_rear": "Soft (pour la motricité et les vibreurs)",
+      "ride_height": "Low"
+    },
+    "common_mistakes": [
+      "Sauter sur la pédale d'accélérateur en sortie de T1/T2, provoquant un violent survirage (Spin).",
+      "Manquer le point de freinage de la T1 en aspiration derrière une autre voiture (manque d'air = manque d'appui).",
+      "Suspensions trop dures causant des rebonds incontrôlables sur le vibreur central d'Ascari."
     ],
-    "key_corners": [
-      {
-        "name": "Virage de la Verrerie",
-        "number": "T1-T2",
-        "advice": "Chicane rapide en aveugle. Il faut plonger très tôt à l'intérieur du T1 et sacrifier un peu la vitesse pour préparer la sortie du T2."
-      },
-      {
-        "name": "Chicane Nord",
-        "number": "T8-T9",
-        "advice": "Freinage en appui au milieu de la ligne droite du Mistral. Très piégeux car la voiture est déséquilibrée par la vitesse."
-      },
-      {
-        "name": "Courbe de Signes",
-        "number": "T10",
-        "advice": "Virage à droite à fond (ou presque) après la ligne droite du Mistral. Regarde loin devant et tourne le volant avec une grande douceur."
-      },
-      {
-        "name": "Le Beausset",
-        "number": "T11",
-        "advice": "Un double droit interminable qui se referme. Reste patient, garde un filet de gaz, et attends le dernier moment pour resserrer la corde et réaccélérer."
-      }
-    ],
-    "elevation_profile": "Relativement plat, légère montée dans la ligne droite du Mistral.",
-    "surface_grip": "Très abrasif ! Les pneus s'usent particulièrement vite, surtout le pneu avant gauche. Les zones de dégagement rayées détruisent les gommes.",
-    "weather_notes": "Le vent (Mistral) peut être très puissant et perturber l'aérodynamique dans la ligne droite et la courbe de Signes."
+    "track_limits": "Sévères (Chicanes et sortie Parabolica)",
+    "rain_rating": "Difficile (Gros risques d'aquaplaning en ligne droite)",
+    "difficulty": 6
   },
 
   "imola": {
@@ -156,142 +142,576 @@
     "length_km": 4.909,
     "corners": 19,
     "description": "Un circuit 'old school', très étroit, bordé de bacs à graviers. Les dépassements y sont difficiles, et l'attaque des hauts vibreurs est la clé du chrono.",
-    "tips": [
-      "Les qualifications sont primordiales car dépasser est complexe.",
-      "Prépare un setup capable de rebondir sur de très gros vibreurs sans perdre la stabilité (amortisseurs souples).",
-      "Évite l'herbe et les graviers à tout prix, le retour en piste est souvent fatal."
-    ],
+    "tips": ["Les qualifications sont primordiales car dépasser est complexe.", "Prépare un setup capable de rebondir sur de très gros vibreurs."],
     "key_corners": [
-      {
-        "name": "Tamburello",
-        "number": "T2-T3-T4",
-        "advice": "Chicane très rapide. Mange littéralement le premier vibreur à gauche pour ouvrir l'angle et garder un maximum d'élan."
-      },
-      {
-        "name": "Tosa",
-        "number": "T7",
-        "advice": "Épingle lente. Attention au survirage à la remise des gaz. C'est l'un des rares bons spots de dépassement."
-      },
-      {
-        "name": "Acque Minerali",
-        "number": "T11-T12",
-        "advice": "Double droit en forte descente puis remontée. Rentre très vite dans le premier, donne un coup de frein au milieu et patience pour la reprise des gaz en montée."
-      },
-      {
-        "name": "Variante Alta",
-        "number": "T14-T15",
-        "advice": "La fameuse chicane haute. Il faut sauter par-dessus les deux vibreurs en ligne droite. Si ta suspension est trop dure, tu vas t'envoler."
-      }
+      {"name": "Tamburello", "number": "T2-T3-T4", "advice": "Chicane très rapide. Mange littéralement le premier vibreur à gauche pour ouvrir l'angle."},
+      {"name": "Acque Minerali", "number": "T11-T12", "advice": "Double droit en forte descente puis remontée. Rentre très vite dans le premier, donne un coup de frein au milieu."},
+      {"name": "Variante Alta", "number": "T14-T15", "advice": "La fameuse chicane haute. Il faut sauter par-dessus les deux vibreurs en ligne droite."}
     ],
     "elevation_profile": "Très vallonné. Descente vertigineuse vers Acque Minerali, forte remontée vers la Variante Alta.",
-    "surface_grip": "Grip élevé mais piste bosselée, ce qui complique les zones de freinage.",
-    "weather_notes": "Attention à la température : sous le soleil, les pneus arrière ont tendance à surchauffer en sortie de virages lents."
+    "surface_grip": "Grip élevé mais piste bosselée.",
+    "weather_notes": "Attention à la surchauffe arrière.",
+    "ideal_downforce": {
+      "GT3": "Medium-High",
+      "Hypercar": "Medium-High",
+      "GT4": "High"
+    },
+    "tyre_wear": "Medium",
+    "brake_wear": "Medium-High",
+    "fuel_consumption": "Medium",
+    "overtaking": ["T2 (Tamburello)", "T7 (Tosa)"],
+    "best_setup": {
+      "wing": "Medium-High",
+      "arb_front": "Soft",
+      "arb_rear": "Medium",
+      "ride_height": "Medium-High (obligatoire pour la Variante Alta)"
+    },
+    "common_mistakes": [
+      "Prendre la Variante Alta avec une voiture trop basse/rigide : perte totale de contrôle à l'atterrissage.",
+      "Aller trop large à la sortie de Rivazza (T18) et mordre le gravier avant la ligne droite.",
+      "Accélérer trop tôt dans Acque Minerali pendant que la voiture est délestée par le relief."
+    ],
+    "track_limits": "Moyennes (Punis par les graviers avant tout)",
+    "rain_rating": "Très Difficile",
+    "difficulty": 8
+  },
+
+  "bahrain": {
+    "display_name": "Bahrain International Circuit",
+    "aliases": ["bahrain", "sakhir"],
+    "country": "Bahreïn",
+    "length_km": 5.412,
+    "corners": 15,
+    "description": "Un circuit dans le désert, très exigeant pour la motricité et les freins. Les virages en appui combinés (freinage + direction) sont la principale difficulté.",
+    "tips": [
+      "La piste évolue énormément : de très chaude (peu de grip) le jour, à plus fraîche et adhérente la nuit.",
+      "Soigne tes sorties de virage lent, le circuit compte 4 longues lignes droites.",
+      "Attention au virage 10 : le freinage se fait en tournant, le blocage de la roue avant-gauche y est quasi systématique si on n'adapte pas sa répartition de freinage."
+    ],
+    "key_corners": [
+      {"name": "T1", "number": "T1", "advice": "Épingle serrée après une longue ligne droite. Excellent spot de dépassement. Croise la trajectoire si tu es attaqué."},
+      {"name": "T9-T10", "number": "T9-T10", "advice": "Le point le plus complexe du circuit. Virage en descente, aveugle, avec freinage en appui. Recule la balance de freinage (Brake Bias) d'un ou deux clics ici."},
+      {"name": "T12", "number": "T12", "advice": "Courbe à droite très rapide en montée. Nécessite une voiture bien plantée aéro-dynamiquement sous peine de glisser des 4 roues hors limite."}
+    ],
+    "elevation_profile": "Léger dénivelé, montée marquée vers T4 et descente complexe vers T10.",
+    "surface_grip": "Très abrasif et poussiéreux hors trajectoire à cause du sable.",
+    "weather_notes": "Course souvent de nuit. Le sable sur la piste peut détruire les pneus s'il y a du vent.",
+    "ideal_downforce": {
+      "GT3": "Medium",
+      "Hypercar": "Medium",
+      "GT4": "Medium"
+    },
+    "tyre_wear": "Very High (Surtout les pneus arrière)",
+    "brake_wear": "High",
+    "fuel_consumption": "High",
+    "overtaking": ["T1", "T4", "T11", "T14"],
+    "best_setup": {
+      "wing": "Medium",
+      "arb_front": "Medium",
+      "arb_rear": "Soft (pour maximiser la motricité en sortie des épingles)",
+      "ride_height": "Low"
+    },
+    "common_mistakes": [
+      "Détruire ses pneus arrière en surconduisant dans les sorties des T1, T4, T8 et T14.",
+      "Bloquer systématiquement l'avant gauche au T10 et ruiner son pneu (plat).",
+      "Mettre trop d'appui aéro et devenir une cible facile dans les 3 zones DRS / longues lignes droites."
+    ],
+    "track_limits": "Sévères (Surtout T4 et T12 à la sortie)",
+    "rain_rating": "N/A (Extrêmement rare)",
+    "difficulty": 7
+  },
+
+  "interlagos": {
+    "display_name": "Autódromo José Carlos Pace (Interlagos)",
+    "aliases": ["interlagos", "sao paulo", "brésil"],
+    "country": "Brésil",
+    "length_km": 4.309,
+    "corners": 15,
+    "description": "Un des rares circuits anti-horaires. Physique pour le cou des pilotes. Il mélange un secteur 2 très sinueux et lent avec une immense remontée à fond vers la ligne d'arrivée.",
+    "tips": [
+      "Le réglage aéro est complexe : il faut de l'appui pour le secteur 2, mais une bonne vitesse de pointe pour la montée finale.",
+      "Circuit anti-horaire : surveille l'usure de tes pneus droits.",
+      "Utilise toute la piste dans le secteur 2, laisse la voiture couler au lieu de forcer les points de corde."
+    ],
+    "key_corners": [
+      {"name": "S do Senna", "number": "T1-T2", "advice": "Plongeon vertigineux à gauche puis droite. Freine très tard en descente, sacrifie le T1 pour une sortie parfaite du T2 vers la ligne droite opposée."},
+      {"name": "Descida do Lago", "number": "T4-T5", "advice": "Double gauche rapide. L'entrée du T4 est le meilleur spot de dépassement après le S do Senna."},
+      {"name": "Ferradura", "number": "T6-T7", "advice": "Double droite aveugle en montée. Sous-virage très fréquent ici."},
+      {"name": "Junção", "number": "T12", "advice": "Le virage le plus important du circuit. Une mauvaise sortie ici, et tu es vulnérable pendant les 1.2 km de remontée vers le T1."}
+    ],
+    "elevation_profile": "Dénivelé extrême. Le T1 est un toboggan, la remontée depuis Junção (T12) jusqu'à la ligne de départ est très raide.",
+    "surface_grip": "Moyen, piste connue pour être bosselée malgré les resurfaçages.",
+    "weather_notes": "La météo à São Paulo est imprévisible. De violents orages peuvent inonder la piste en 5 minutes.",
+    "ideal_downforce": {
+      "GT3": "Medium-High",
+      "Hypercar": "Medium",
+      "GT4": "High"
+    },
+    "tyre_wear": "Medium",
+    "brake_wear": "Low-Medium",
+    "fuel_consumption": "Low",
+    "overtaking": ["T1 (S do Senna)", "T4 (Descida do Lago)"],
+    "best_setup": {
+      "wing": "Medium",
+      "arb_front": "Medium-Soft",
+      "arb_rear": "Medium",
+      "ride_height": "Medium (pour absorber les bosses du secteur 2)"
+    },
+    "common_mistakes": [
+      "Freiner trop tard à Junção, rater la corde, et ruiner toute la vitesse pour la grande remontée.",
+      "Régler la hauteur de caisse trop basse et rebondir sur les bosses du T1, perdant l'arrière au freinage.",
+      "Surchauffer le pneu avant droit dans la Ferradura."
+    ],
+    "track_limits": "Tolérantes (Beaucoup de zones en herbe naturelles punitives)",
+    "rain_rating": "Très Difficile (Rivières sur la piste dans le S do Senna)",
+    "difficulty": 8
+  },
+
+  "cota": {
+    "display_name": "Circuit of the Americas",
+    "aliases": ["cota", "austin"],
+    "country": "États-Unis",
+    "length_km": 5.513,
+    "corners": 20,
+    "description": "Un circuit moderne inspiré des meilleurs tracés du monde : un secteur 1 façon 'Suzuka', une ligne droite de 1.2km, et un dernier secteur technique façon 'Hockenheim'.",
+    "tips": [
+      "Le secteur 1 (Esses) est basé sur le rythme : une erreur sur le premier virage compromet les 4 suivants.",
+      "Sois patient sur les gaz dans les virages lents du secteur 3 pour ne pas détruire tes pneus arrière.",
+      "Le freinage du T12 au bout de la longue ligne droite est massif, c'est l'endroit idéal pour plonger (Divebomb)."
+    ],
+    "key_corners": [
+      {"name": "T1", "number": "T1", "advice": "Une épingle aveugle au sommet d'une colline vertigineuse. Le point de corde est très tardif, tu peux freiner incroyablement tard grâce à la pente."},
+      {"name": "The Esses", "number": "T3-T6", "advice": "Changements de direction ultra-rapides. Nécessite une voiture réactive (barres anti-roulis rigides)."},
+      {"name": "T11", "number": "T11", "advice": "Épingle cruciale avant la plus longue ligne droite. Sacrifie l'entrée pour maximiser la sortie."},
+      {"name": "Carousel", "number": "T16-T18", "advice": "Un immense triple droite interminable. Gère l'accélérateur pour limiter le sous-virage et l'usure du pneu avant-gauche."}
+    ],
+    "elevation_profile": "Marqué. La montée vers le T1 est l'une des plus raides du sport automobile (plus de 30 mètres de dénivelé).",
+    "surface_grip": "Moyen. Célèbre pour être l'un des circuits les plus bosselés au monde (affaissements de terrain).",
+    "weather_notes": "Très chaud au Texas, l'usure thermique des pneus est un facteur majeur.",
+    "ideal_downforce": {
+      "GT3": "High",
+      "Hypercar": "Medium-High",
+      "GT4": "High"
+    },
+    "tyre_wear": "High",
+    "brake_wear": "Medium",
+    "fuel_consumption": "Medium",
+    "overtaking": ["T1", "T12", "T11"],
+    "best_setup": {
+      "wing": "Medium-High",
+      "arb_front": "Stiff (pour la réactivité dans les Esses)",
+      "arb_rear": "Medium",
+      "ride_height": "Medium-High (Obligatoire pour survivre aux bosses !)"
+    },
+    "common_mistakes": [
+      "Régler la voiture trop rigide ou trop basse : les bosses de COTA rendront la voiture inconduisible.",
+      "Détruire le pneu avant-gauche dans le Carousel (T16-T18) en braquant trop.",
+      "Se faire piéger par les Track Limits très stricts à la sortie du T19."
+    ],
+    "track_limits": "Extrêmement Sévères (T9, T19, T20)",
+    "rain_rating": "Moyennement Difficile",
+    "difficulty": 9
+  },
+
+  "misano": {
+    "display_name": "Misano World Circuit Marco Simoncelli",
+    "aliases": ["misano", "marco simoncelli"],
+    "country": "Italie",
+    "length_km": 4.226,
+    "corners": 16,
+    "description": "Un tracé plat, très technique et fluide, réputé comme l'un des circuits les plus impitoyables au monde concernant les limites de piste. Parfait pour les batailles en GT3.",
+    "tips": [
+      "Les limites de piste sont ton pire ennemi ici. Reste à 1 cm de la ligne blanche en sortie des virages rapides.",
+      "Le circuit exige une attaque massive des vibreurs intérieurs pour raccourcir les trajectoires.",
+      "Le setup doit offrir une grande stabilité au freinage en appui (Trail braking) pour les enchaînements lents."
+    ],
+    "key_corners": [
+      {"name": "Variante del Parco", "number": "T1-T2-T3", "advice": "Chicane serrée. Freinage lourd, il faut utiliser les vibreurs plats au maximum pour ouvrir le T3."},
+      {"name": "Quercia", "number": "T8", "advice": "Épingle à gauche en dévers inversé après la ligne droite arrière. Le point de freinage est délicat, beaucoup de survirage en entrée."},
+      {"name": "Tramonto", "number": "T10", "advice": "Un droit très long et complexe. Il faut freiner très tard, tourner, et patienter longtemps avant de réaccélérer."},
+      {"name": "Curvone", "number": "T11", "advice": "Courbe à droite quasi à fond (ou à fond selon l'aéro). C'est le test ultime de confiance et d'appui de la voiture."}
+    ],
+    "elevation_profile": "Totalement plat.",
+    "surface_grip": "Élevé. L'asphalte est abrasif et très adhérent.",
+    "weather_notes": "Proche de l'Adriatique, le taux d'humidité peut rendre la piste très glissante au petit matin.",
+    "ideal_downforce": {
+      "GT3": "High",
+      "Hypercar": "High",
+      "GT4": "High"
+    },
+    "tyre_wear": "Medium",
+    "brake_wear": "Medium",
+    "fuel_consumption": "Medium",
+    "overtaking": ["T4", "T8 (Quercia)", "T14"],
+    "best_setup": {
+      "wing": "High",
+      "arb_front": "Medium",
+      "arb_rear": "Medium-Stiff (pour faire pivoter l'auto dans le secteur lent)",
+      "ride_height": "Medium (pour escalader les vibreurs de type 'saucisse')"
+    },
+    "common_mistakes": [
+      "Collectionner les avertissements de Track Limits (T6, T11, T16) et écoper d'un Drive-Through.",
+      "Perdre l'arrière dans Tramonto (T10) en remettant les gaz alors que le volant est encore trop braqué.",
+      "Lever le pied par peur dans le Curvone (T11) et déséquilibrer l'aérodynamique de la voiture."
+    ],
+    "track_limits": "Extrêmement Sévères (Le circuit le plus strict d'Europe)",
+    "rain_rating": "Difficile (Beaucoup de flaques d'eau persistantes)",
+    "difficulty": 7
+  },
+
+  "zandvoort": {
+    "display_name": "Circuit Zandvoort",
+    "aliases": ["zandvoort"],
+    "country": "Pays-Bas",
+    "length_km": 4.259,
+    "corners": 14,
+    "description": "Un circuit à l'ancienne niché dans les dunes de sable, célèbre pour ses virages relevés (bankings) spectaculaires. Très étroit, sinueux, les dépassements y sont presque impossibles sans erreur de l'adversaire.",
+    "tips": [
+      "Les qualifications représentent 90% du résultat de ta course. Dépasser est un cauchemar.",
+      "Exploite l'inclinaison (banking) des virages 3 et 14 : la physique te plaque au sol, tu peux y passer bien plus vite que prévu.",
+      "Le sable du bord de mer s'infiltre sur la piste hors trajectoire, rendant toute attaque à l'intérieur très risquée."
+    ],
+    "key_corners": [
+      {"name": "Tarzanbocht (Tarzan)", "number": "T1", "advice": "Une épingle à 180° relevée. Le seul vrai point de dépassement. Possibilité de croiser par l'extérieur grâce au banking."},
+      {"name": "Hugenholtzbocht", "number": "T3", "advice": "Banking extrême. N'hésite pas à prendre une ligne très haute près du mur pour garder énormément de vitesse et ressortir plus fort."},
+      {"name": "Scheivlak", "number": "T7", "advice": "Virage aveugle en descente à très haute vitesse. Impressionnant, demande des nerfs d'acier et une stabilité aéro parfaite."},
+      {"name": "Arie Luyendykbocht", "number": "T14", "advice": "Le dernier virage, banking incliné à 18° ! Se passe pied au plancher pour propulser la voiture sur la ligne droite."}
+    ],
+    "elevation_profile": "Dunes de sable : montées et descentes constantes, souvent en aveugle.",
+    "surface_grip": "Variables. Très bon sur la trajectoire nettoyée, catastrophique si on met une roue sur le sable.",
+    "weather_notes": "Vent fort venant de la Mer du Nord, amenant du sable sur la piste. Météo côtière très changeante.",
+    "ideal_downforce": {
+      "GT3": "Maximum",
+      "Hypercar": "High",
+      "GT4": "Maximum"
+    },
+    "tyre_wear": "High (Surtout à cause des G latéraux dans les bankings)",
+    "brake_wear": "Low-Medium",
+    "fuel_consumption": "Medium",
+    "overtaking": ["T1 (Tarzan)"],
+    "best_setup": {
+      "wing": "Maximum",
+      "arb_front": "Stiff",
+      "arb_rear": "Stiff",
+      "ride_height": "Medium-Low (Attention au talonnage dans les bankings à cause des forces G)"
+    },
+    "common_mistakes": [
+      "Tenter un dépassement audacieux hors de la trajectoire et glisser sur le sable.",
+      "Régler la pression des pneus trop haute : les bankings font énormément chauffer la carcasse.",
+      "Trop d'agressivité sur l'accélérateur à la sortie de la chicane (T11-12), envoyant la voiture dans le bac à graviers."
+    ],
+    "track_limits": "Tolérantes (Les murs et les graviers s'en chargent)",
+    "rain_rating": "Extrême (Le sable mouillé devient de la boue glissante)",
+    "difficulty": 9
+  },
+  {
+  "lusail": {
+    "display_name": "Lusail International Circuit",
+    "aliases": ["lusail", "losail", "qatar"],
+    "country": "Qatar",
+    "length_km": 5.419,
+    "corners": 16,
+    "description": "Un circuit plat, ultra-fluide et extrêmement rapide, initialement conçu pour la Moto. C'est un véritable enfer pour le pneu avant-gauche à cause des nombreux virages longs à droite à moyenne et haute vitesse.",
+    "tips": [
+      "Ne surmène pas tes pneus dans le premier relais. La dégradation thermique (blistering) est très fréquente ici.",
+      "Laisse la voiture couler dans les virages, n'essaie pas de forcer des entrées en V (Stop & Go), le tracé demande de garder de l'élan.",
+      "Attention aux limites de piste, les vibreurs plats invitent à élargir, mais les pénalités tombent vite."
+    ],
+    "key_corners": [
+      {"name": "T1", "number": "T1", "advice": "Le seul vrai gros freinage du circuit et la meilleure opportunité de dépassement au bout de la longue ligne droite."},
+      {"name": "Triple Droite", "number": "T12-T13-T14", "advice": "Inspiré du virage 8 d'Istanbul. Dévoreur de pneu avant-gauche. Joue sur l'accélérateur pour garder la ligne sans braquer excessivement."}
+    ],
+    "elevation_profile": "Totalement plat.",
+    "surface_grip": "Élevé sur la trajectoire, mais la poussière du désert rend le hors-piste glissant.",
+    "weather_notes": "Très chaud. Les courses nocturnes offrent plus de grip et moins de dégradation thermique.",
+    "ideal_downforce": {
+      "GT3": "Medium-High",
+      "Hypercar": "High",
+      "GT4": "High"
+    },
+    "tyre_wear": "Very High (Critique sur le pneu Avant-Gauche)",
+    "brake_wear": "Low",
+    "fuel_consumption": "Medium",
+    "overtaking": ["T1", "T6"],
+    "best_setup": {
+      "wing": "Medium-High",
+      "arb_front": "Stiff (pour la stabilité à haute vitesse)",
+      "arb_rear": "Medium",
+      "ride_height": "Low"
+    },
+    "common_mistakes": [
+      "Détruire le pneu avant-gauche en 5 tours en survirant dans le T12-T13-T14.",
+      "Prendre trop de vibreur intérieur au T15, ce qui déstabilise la voiture avant la ligne droite."
+    ],
+    "track_limits": "Sévères (Beaucoup de zones dégagées peintes)",
+    "rain_rating": "N/A",
+    "difficulty": 7
   },
 
   "fuji": {
     "display_name": "Fuji Speedway",
-    "aliases": ["fuji", "fuji speedway", "mont fuji"],
+    "aliases": ["fuji", "mont fuji"],
     "country": "Japon",
     "length_km": 4.563,
     "corners": 16,
-    "description": "Le circuit des deux extrêmes : une ligne droite interminable de 1.5 km suivie d'un secteur 3 ultra-sinueux et lent.",
+    "description": "Le circuit des compromis impossibles. Il combine l'une des plus longues lignes droites du monde (1.5 km) avec un Secteur 3 extrêmement lent, sinueux et technique en montée.",
     "tips": [
-      "Le réglage aéro est un casse-tête : si tu mets trop d'appui, tu perds des secondes dans la ligne droite, mais tu gagnes dans le secteur 3. Le compromis est crucial.",
-      "Le dernier secteur exige beaucoup de traction mécanique. Gère bien la chaleur de tes pneus arrière."
+      "Si tu règles la voiture pour la ligne droite (Low Downforce), tu vas souffrir dans le S3. Si tu mets de l'appui, tu seras lent en ligne droite. Le réglage 'Medium' est souvent le meilleur filet de sécurité.",
+      "Sois patient sur les gaz dans le Secteur 3 (Dunlop à Panasonic), la piste est très large et invite à accélérer trop tôt."
     ],
     "key_corners": [
-      {
-        "name": "T1 (First Corner)",
-        "number": "T1",
-        "advice": "Freinage extrême au bout de la ligne droite (souvent 300 à 70 km/h). Retarde ton point de corde pour bien préparer l'accélération en descente."
-      },
-      {
-        "name": "100R",
-        "number": "T4-T5",
-        "advice": "Très longue courbe à droite rapide. Le sous-virage y est fréquent. Joue avec les gaz pour faire pivoter la voiture sans perdre trop de vitesse."
-      },
-      {
-        "name": "Dunlop Corner",
-        "number": "T10",
-        "advice": "L'entrée du redoutable secteur 3. Gros freinage en montée suivi d'une épingle. Attends que la voiture soit droite pour remettre la puissance."
-      },
-      {
-        "name": "Netz Corner / Panasonic",
-        "number": "T15-T16",
-        "advice": "L'enchaînement final. Virages très lents et techniques, hors de question de bloquer une roue ici sous peine de ruiner toute la ligne droite suivante."
-      }
+      {"name": "T1", "number": "T1", "advice": "Gros freinage après 1.5km à fond. La piste descend vers la corde. Dépassement garanti si tu freines tard, mais attention au blocage de roues."},
+      {"name": "100R", "number": "T4-T5", "advice": "Longue courbe à droite. Trouve un rythme de croisière avec l'accélérateur pour ne pas générer de sous-virage."},
+      {"name": "Dunlop Corner", "number": "T10", "advice": "Chicane très lente en montée qui marque le début du calvaire technique du S3."}
     ],
-    "elevation_profile": "Gros changement de relief. Le secteur 1 est en forte descente, tandis que tout le secteur 3 est une lente et raide remontée.",
-    "surface_grip": "Lisse et uniforme, offrant un grip constant.",
-    "weather_notes": "Le pied du Mont Fuji est célèbre pour son brouillard et ses pluies soudaines. La piste peut devenir grasse très vite."
+    "elevation_profile": "Ligne droite plate, léger dénivelé dans le S2, et forte montée tout au long du Secteur 3.",
+    "surface_grip": "Élevé et très lisse.",
+    "weather_notes": "Météo capricieuse en montagne. Le brouillard et la pluie forte sont fréquents.",
+    "ideal_downforce": {
+      "GT3": "Medium",
+      "Hypercar": "Low-Medium",
+      "GT4": "Medium"
+    },
+    "tyre_wear": "Medium",
+    "brake_wear": "Medium",
+    "fuel_consumption": "High",
+    "overtaking": ["T1", "T10 (Dunlop)"],
+    "best_setup": {
+      "wing": "Medium-Low",
+      "arb_front": "Soft (pour le grip mécanique du S3)",
+      "arb_rear": "Soft",
+      "ride_height": "Medium"
+    },
+    "common_mistakes": [
+      "Se frustrer dans le Secteur 3 et surconduire, ce qui détruit les pneus arrière par patinage.",
+      "Mettre trop d'aileron pour être à l'aise dans le S3, et se faire dépasser systématiquement sur la ligne droite."
+    ],
+    "track_limits": "Tolérantes (Beaucoup de bitume de dégagement)",
+    "rain_rating": "Très Difficile (Rivières sur la piste dans le S3)",
+    "difficulty": 8
   },
 
   "silverstone": {
     "display_name": "Silverstone Circuit",
-    "aliases": ["silverstone", "silverstone circuit"],
+    "aliases": ["silverstone", "home of british motor racing"],
     "country": "Royaume-Uni",
     "length_km": 5.891,
     "corners": 18,
-    "description": "Ancienne base aérienne de la RAF, Silverstone est réputé pour ses enchaînements de courbes rapides et fluides, en particulier le complexe Maggotts-Becketts-Chapel, l'un des passages les plus exigeants du calendrier mondial en termes d'appui aérodynamique et de confiance au volant.",
+    "description": "Un tracé légendaire, ultra-rapide et large. L'enchaînement Maggotts, Becketts et Chapel est l'un des tests d'aérodynamisme les plus difficiles au monde.",
     "tips": [
-      "Cherche un appui aérodynamique élevé : les gains dans les courbes rapides valent plus que la perte en ligne droite.",
-      "L'enchaînement Maggotts-Becketts-Chapel se négocie en un seul geste fluide, pas comme trois virages séparés.",
-      "Le vent, fréquent sur ce circuit exposé, peut changer l'équilibre de la voiture d'un tour à l'autre."
+      "L'aérodynamisme est roi. Une voiture stable dans les courbes rapides fera toute la différence.",
+      "Ne sacrifie pas la sortie de Chapel (T14) ou de Luffield (T7), elles mènent sur les deux plus grandes lignes droites.",
+      "Attention au vent qui souffle fort sur cet ancien aérodrome et modifie les points de freinage."
     ],
     "key_corners": [
-      {"name": "Copse", "number": "T1", "advice": "Virage à droite très rapide, pris quasiment plein gaz en GT3. Demande de la confiance : lever le pied change radicalement la trajectoire et peut compromettre tout le secteur suivant."},
-      {"name": "Maggotts-Becketts-Chapel", "number": "T3-T6", "advice": "Le passage signature du circuit. Change de direction rapide gauche-droite-gauche à très haute vitesse. Vise une trajectoire continue et des micro-corrections au volant plutôt que des à-coups, qui déstabiliseraient l'appui aéro."},
-      {"name": "Stowe", "number": "T9", "advice": "Grosse zone de freinage à droite en fin de ligne droite d'Hangar. Freine tard mais tout droit, la voiture doit être stabilisée avant de tourner pour éviter le sous-virage."},
-      {"name": "Club", "number": "T18", "advice": "Dernier virage avant la ligne, rapide et ouvert. Une bonne sortie ici conditionne toute la vitesse de passage sur la ligne des stands."}
+      {"name": "Maggotts & Becketts", "number": "T10-T14", "advice": "On rentre à fond, puis on tombe un rapport à chaque changement de direction. La fluidité et le rythme sont vitaux."},
+      {"name": "Stowe", "number": "T15", "advice": "Freinage en appui à très haute vitesse à la fin de la ligne droite de Hangar. Plonge tard vers la corde."},
+      {"name": "Vale & Club", "number": "T16-T18", "advice": "Chicane lente menant sur la ligne d'arrivée. Gros freinage bosselé, attention au blocage des roues."}
     ],
-    "elevation_profile": "Relativement plat avec de légères ondulations, notamment autour de Maggotts-Becketts où les changements d'appui au sol influencent l'adhérence en courbe.",
-    "surface_grip": "Bon niveau d'adhérence generalement, mais la piste peut être fraîche et glissante tôt le matin ou après une averse, surtout dans le secteur 1.",
-    "weather_notes": "Climat anglais changeant : averses localisées fréquentes qui peuvent ne toucher qu'une partie du circuit, rendant certains secteurs mouillés et d'autres secs simultanément."
+    "elevation_profile": "Quasiment plat.",
+    "surface_grip": "Élevé. Asphalte récemment refait mais extrêmement abrasif.",
+    "weather_notes": "La météo britannique classique. Il peut pleuvoir sur une moitié du circuit et faire sec sur l'autre.",
+    "ideal_downforce": {
+      "GT3": "Medium-High",
+      "Hypercar": "High",
+      "GT4": "High"
+    },
+    "tyre_wear": "High (Surtout pneu avant-gauche)",
+    "brake_wear": "Low-Medium",
+    "fuel_consumption": "High",
+    "overtaking": ["T15 (Stowe)", "T16 (Vale)", "T3 (Village)"],
+    "best_setup": {
+      "wing": "Medium-High",
+      "arb_front": "Stiff (Indispensable pour Maggotts/Becketts)",
+      "arb_rear": "Medium",
+      "ride_height": "Low"
+    },
+    "common_mistakes": [
+      "Vouloir aller trop vite dans la première partie de Becketts et rater totalement la sortie vers la ligne droite de Hangar.",
+      "Sous-estimer l'usure du pneu avant-gauche et finir avec une crevaison ou un sous-virage massif en fin de relais."
+    ],
+    "track_limits": "Sévères (Copse et Stowe sont très surveillés)",
+    "rain_rating": "Difficile (Piste très large, difficile de trouver la trajectoire sèche)",
+    "difficulty": 8
   },
 
-  "nurburgring_gp": {
-    "display_name": "Nürburgring GP-Strecke",
-    "aliases": ["nurburgring", "nürburgring", "nurburgring gp", "gp-strecke", "ring"],
+  "nurburgring": {
+    "display_name": "Nürburgring GP",
+    "aliases": ["nurburgring", "nurburgring gp", "nürburg", "eifel"],
     "country": "Allemagne",
     "length_km": 5.148,
-    "corners": 15,
-    "description": "Le tracé grand-prix moderne du Nürburgring (à ne pas confondre avec la légendaire Nordschleife), un circuit technique alternant sections lentes très serrées et portions plus rapides, avec un dénivelé prononcé dans le premier secteur.",
+    "corners": 16,
+    "description": "La version Grand Prix moderne. Un tracé technique, avec beaucoup de virages à moyenne vitesse (Sector 2) et une chicane finale iconique demandant une grosse attaque sur les vibreurs.",
     "tips": [
-      "Le complexe du premier secteur (Yokohama-S) demande beaucoup de précision à basse vitesse : les erreurs y coûtent cher en temps.",
-      "Privilégie la traction mécanique sur l'appui aérodynamique pur, le tracé favorise les voitures qui sortent bien des virages lents.",
-      "Le dénivelé rend certains points de freinage difficiles à juger à l'oeil : fie-toi aux repères plutôt qu'au ressenti visuel."
+      "Le premier virage est un entonnoir qui cause 90% des crashs au premier tour. Reste prudent au départ.",
+      "Il faut de la motricité en sortie des épingles lentes (T1, T7) et de la stabilité pour le rapide Schumacher S (T8-T9).",
+      "La chicane NGK (T13-T14) demande de sauter littéralement sur les hauts vibreurs."
     ],
     "key_corners": [
-      {"name": "Yokohama-S", "number": "T1-T2", "advice": "Enchaînement serré en S dès la sortie de la ligne des stands. Freine en ligne droite, place la voiture tôt pour le premier virage afin de bien négocier le changement de direction qui suit."},
-      {"name": "Dunlop-Kehre", "number": "T5", "advice": "Épingle très lente en légère descente. Freinage tardif possible, mais attention au verrouillage des roues avant vu la pente. Vise une sortie propre, la ligne droite qui suit est longue."},
-      {"name": "Ford-Kurve", "number": "T10", "advice": "Virage à gauche à moyenne vitesse qui referme progressivement. Ne prends pas la corde trop tôt sous peine d'être obligé de lever le pied en milieu de courbe."},
-      {"name": "Schumacher-S (NGK-Schikane)", "number": "T13-T14", "advice": "Chicane rapide en fin de tour. Une bonne sortie conditionne la vitesse de pointe sur la ligne principale : sacrifie légèrement l'entrée pour optimiser la sortie."}
+      {"name": "Yokohama-S (T1-T2)", "number": "T1-T2", "advice": "Épingle très serrée en descente, plonge tard. La sortie du T2 conditionne tout le début du secteur."},
+      {"name": "Schumacher S", "number": "T8-T9", "advice": "Chicane très rapide. Mange le vibreur intérieur gauche pour ouvrir l'angle du droit, mais attention au survirage en sortie."},
+      {"name": "Chicane NGK", "number": "T13-T14", "advice": "Freinage brutal. Il faut une suspension capable d'absorber les très hauts vibreurs sans jeter la voiture dans le mur."}
     ],
-    "elevation_profile": "Dénivelé marqué dans le premier secteur, avec une descente prononcée vers la Dunlop-Kehre. Le reste du tracé est plus modéré.",
-    "surface_grip": "Adhérence correcte et homogène, piste relativement moderne et bien entretenue par rapport à d'autres tracés historiques.",
-    "weather_notes": "La région est connue pour des conditions changeantes rapides, en particulier en intersaison ; le brouillard matinal peut retarder les sessions."
+    "elevation_profile": "Plongeon raide vers le T1, puis remontée progressive tout au long du tour vers la chicane finale.",
+    "surface_grip": "Grip solide et asphalte régulier.",
+    "weather_notes": "Climat du massif de l'Eifel : froid, pluie très fréquente, brouillard. Les pneus sont parfois durs à mettre en température.",
+    "ideal_downforce": {
+      "GT3": "High",
+      "Hypercar": "Medium-High",
+      "GT4": "High"
+    },
+    "tyre_wear": "Medium",
+    "brake_wear": "Medium-High",
+    "fuel_consumption": "Medium",
+    "overtaking": ["T1", "T13 (Chicane)"],
+    "best_setup": {
+      "wing": "Medium-High",
+      "arb_front": "Soft",
+      "arb_rear": "Medium",
+      "ride_height": "Medium (pour absorber la chicane NGK)"
+    },
+    "common_mistakes": [
+      "Freiner trop tard au T1 en descente et bloquer les roues avant.",
+      "Prendre la chicane NGK avec une voiture réglée trop basse : décollage et perte de contrôle assurés.",
+      "Accélérer trop tôt dans le Ford-Kurve (T6) et sous-virer dans les graviers."
+    ],
+    "track_limits": "Moyennes (Sortie du T4 et chicane surveillées)",
+    "rain_rating": "Très Difficile (Les vibreurs deviennent des patinoires)",
+    "difficulty": 7
   },
 
-  "barcelona_catalunya": {
-    "display_name": "Circuit de Barcelona-Catalunya",
-    "aliases": ["barcelone", "catalunya", "barcelona", "circuit de catalogne", "montmelo"],
-    "country": "Espagne",
-    "length_km": 4.657,
-    "corners": 14,
-    "description": "Circuit très utilisé pour les essais grâce à la diversité de ses virages (lents, moyens, rapides), ce qui en fait un tracé exigeant en usure pneumatique, en particulier sur l'avant-gauche dans la longue courbe 3.",
+  "paul_ricard": {
+    "display_name": "Circuit Paul Ricard (Le Castellet)",
+    "aliases": ["paul ricard", "le castellet"],
+    "country": "France",
+    "length_km": 5.842,
+    "corners": 15,
+    "description": "Le paradis des zones de dégagement colorées (et abrasives). Un tracé plat avec la mythique ligne droite du Mistral et la vertigineuse courbe de Signes. Très complexe de trouver la bonne ligne.",
     "tips": [
-      "Gère l'usure du pneu avant gauche : la courbe 3, longue et rapide, est la plus exigeante du tour à ce niveau.",
-      "La chicane finale, resserrée, demande un freinage précis après la longue ligne droite qui la précède.",
-      "Le vent, fréquent l'après-midi, peut significativement affecter l'appui dans les virages rapides du secteur 1."
+      "Les bandes rayées bleues et rouges hors-piste détruiront tes pneus si tu roules trop dessus.",
+      "Le secteur 3 est une succession d'épingles techniques lentes : garde du grip mécanique (Setup souple).",
+      "La ligne droite du Mistral force à baisser un peu l'aileron pour pouvoir attaquer au freinage de la chicane nord."
     ],
     "key_corners": [
-      {"name": "Elf", "number": "T1", "advice": "Freinage en léger appui après la ligne droite principale. Prépare bien l'entrée pour enchaîner correctement vers le virage 2, la sortie ici conditionne tout le début de tour."},
-      {"name": "Renault", "number": "T3", "advice": "Longue courbe à droite à haute vitesse, la plus exigeante en charge sur les pneus avant. Vise une trajectoire large et constante plutôt qu'un point de corde marqué, pour répartir la charge sur la durée du virage."},
-      {"name": "Campsa", "number": "T9", "advice": "Enchaînement rapide en montée. La voiture doit être stabilisée avant l'apex, le manque d'appui ici se traduit directement par du sous-virage."},
-      {"name": "Chicane finale", "number": "T14-T15", "advice": "Freinage tardif possible en ligne droite, mais la chicane resserre vite : ne vise pas une vitesse d'entrée trop élevée sous peine de devoir lever fortement au milieu."}
+      {"name": "Signes", "number": "T10", "advice": "Courbe à droite mythique au bout du Mistral. Se passe à fond en Hypercar et GT3 si le setup aéro le permet, impressionnant et vital pour le chrono."},
+      {"name": "Le Beausset", "number": "T11", "advice": "Un double droite interminable. Le point de corde est très très tardif. Il faut gérer l'accélérateur pour ne pas tuer le pneu avant-gauche."},
+      {"name": "Chicane Nord", "number": "T8-T9", "advice": "Gros freinage coupant la ligne droite. Vibreurs permissifs mais attention au track limit en sortie."}
     ],
-    "elevation_profile": "Modérément vallonné, avec une montée sensible dans le secteur 2 autour de Campsa.",
-    "surface_grip": "Bon niveau d'adhérence global, piste très rodée grâce à son usage intensif en essais toute l'année.",
-    "weather_notes": "Vent latéral fréquent en fin de journée, notamment sensible dans les virages rapides du premier secteur."
+    "elevation_profile": "Plat comme un billard.",
+    "surface_grip": "Très lisse et adhérent sur la piste, extrêmement abrasif (volontairement) hors-piste.",
+    "weather_notes": "Attention au vent (le Mistral) qui peut rendre la voiture très instable dans la courbe de Signes.",
+    "ideal_downforce": {
+      "GT3": "Medium",
+      "Hypercar": "Medium",
+      "GT4": "Medium"
+    },
+    "tyre_wear": "Medium (Élevé si sortie de piste)",
+    "brake_wear": "Low-Medium",
+    "fuel_consumption": "Medium",
+    "overtaking": ["T8 (Chicane)", "T1 (S de la Verrerie)"],
+    "best_setup": {
+      "wing": "Medium",
+      "arb_front": "Medium",
+      "arb_rear": "Soft (pour motricité dans le Secteur 3)",
+      "ride_height": "Low"
+    },
+    "common_mistakes": [
+      "Utiliser les zones de dégagement abrasives pour rattraper une erreur, et ruiner ses gommes pour le reste du relais.",
+      "Freiner trop tard au Beausset, louper la corde tardive et perdre 1 seconde complète.",
+      "Se perdre visuellement dans le dédale des lignes de couleurs et rater ses repères de freinage."
+    ],
+    "track_limits": "Sévères (Pistes très larges, la ligne blanche est stricte)",
+    "rain_rating": "Difficile (Manque de repères visuels accentué par l'eau)",
+    "difficulty": 6
+  },
+  
+  "red_bull_ring": {
+    "display_name": "Red Bull Ring",
+    "aliases": ["red bull ring", "spielberg", "a1 ring"],
+    "country": "Autriche",
+    "length_km": 4.318,
+    "corners": 10,
+    "description": "Un tracé court et explosif. Trois longues lignes droites terminées par de gros freinages, suivies d'un deuxième secteur très rapide en descente. Un circuit de puissance et de freins.",
+    "tips": [
+      "Privilégie la vitesse de pointe et l'efficacité au freinage (Aéro medium-low, suspensions avant dures).",
+      "Les virages 9 et 10 sont les juges de paix pour les limites de piste. Une roue de trop dehors et ton tour est annulé.",
+      "C'est l'un des circuits où les dépassements sont les plus faciles (T1, T3, T4)."
+    ],
+    "key_corners": [
+      {"name": "Remus (T3)", "number": "T3", "advice": "Une épingle serrée en forte montée. Tu peux freiner extrêmement tard grâce à la pente. Gère bien la motricité en sortie car la pente te ralentit."},
+      {"name": "Schlossgold (T4)", "number": "T4", "advice": "Gros freinage en descente. L'arrière de la voiture s'allège, risque de blocage ou de tête-à-queue important."},
+      {"name": "Rindt (T9)", "number": "T9", "advice": "Droite très rapide en dévers. Laisse la voiture s'élargir sur le vibreur extérieur, mais attention au track limit fatal."}
+    ],
+    "elevation_profile": "Fort dénivelé. Grosse montée du T1 au T3, puis descente vertigineuse jusqu'à la ligne de départ.",
+    "surface_grip": "Bon grip, surface régulière.",
+    "weather_notes": "Situé dans les Alpes de Styrie, la météo peut passer du grand soleil à l'orage très rapidement.",
+    "ideal_downforce": {
+      "GT3": "Medium-Low",
+      "Hypercar": "Medium-Low",
+      "GT4": "Low"
+    },
+    "tyre_wear": "Low-Medium",
+    "brake_wear": "Very High",
+    "fuel_consumption": "Medium",
+    "overtaking": ["T3", "T4", "T1"],
+    "best_setup": {
+      "wing": "Medium-Low",
+      "arb_front": "Stiff (pour la stabilité au gros freinage)",
+      "arb_rear": "Soft (pour relancer en sortie d'épingle)",
+      "ride_height": "Medium"
+    },
+    "common_mistakes": [
+      "Freiner trop tard au T4 en descente et perdre complètement le train arrière.",
+      "Prendre trop de vibreur 'saucisse' à l'intérieur du T1 et abîmer le fond plat.",
+      "Prendre des dizaines de pénalités de Track Limits à la sortie des virages 9 et 10."
+    ],
+    "track_limits": "Extrêmement Sévères (Surtout T9 et T10)",
+    "rain_rating": "Difficile (Fortes rivières au T3 et T4)",
+    "difficulty": 5
+  },
+
+  "brands_hatch": {
+    "display_name": "Brands Hatch GP",
+    "aliases": ["brands hatch", "brands"],
+    "country": "Royaume-Uni",
+    "length_km": 3.916,
+    "corners": 9,
+    "description": "Un tracé 'old school' pur jus. Étroit, sinueux, vallonné, sans aucune échappatoire. La première partie est un amphithéâtre naturel, la deuxième s'enfonce dans la forêt à des vitesses folles.",
+    "tips": [
+      "La piste est très étroite. Protéger l'intérieur suffit généralement à empêcher tout dépassement.",
+      "Ne cherche pas à sur-conduire : la précision chirurgicale est plus payante ici que l'agressivité.",
+      "Une confiance absolue dans ton train avant est vitale pour la section dans les bois (Hawthorn, Westfield)."
+    ],
+    "key_corners": [
+      {"name": "Paddock Hill Bend", "number": "T1", "advice": "Une descente aveugle terrifiante. Jette la voiture à la corde, la compression en bas t'aidera à tourner. Ne freine pas en plein virage."},
+      {"name": "Druids", "number": "T2", "advice": "Épingle très lente en montée. Grosse zone de freinage, point de dépassement classique en plongeant à l'intérieur."},
+      {"name": "Hawthorn", "number": "T5", "advice": "Droite très rapide en entrée de forêt. Il faut un setup aéro fort et se jeter sur le vibreur intérieur."}
+    ],
+    "elevation_profile": "Des montagnes russes. Le plongeon de Paddock Hill est l'un des dénivelés les plus abrupts du motorsport.",
+    "surface_grip": "Moyen, piste bosselée par endroits (forêt).",
+    "weather_notes": "Souvent humide et glissant sous les arbres. Le soleil rasant au crépuscule éblouit dans la section GP.",
+    "ideal_downforce": {
+      "GT3": "High",
+      "Hypercar": "High",
+      "GT4": "Maximum"
+    },
+    "tyre_wear": "Medium",
+    "brake_wear": "Medium",
+    "fuel_consumption": "Low",
+    "overtaking": ["T2 (Druids)", "T1 (Paddock - risqué)"],
+    "best_setup": {
+      "wing": "High",
+      "arb_front": "Soft",
+      "arb_rear": "Stiff (pour faire pivoter la voiture dans les portions étroites)",
+      "ride_height": "Medium-High (pour encaisser Paddock Hill et les gros vibreurs)"
+    },
+    "common_mistakes": [
+      "Freiner trop tard et glisser vers le bac à gravier fatal à l'extérieur de Paddock Hill Bend.",
+      "Mettre une roue dans l'herbe humide en sortant de Westfield (T6) : crash instantané.",
+      "Essayer de dépasser en force dans la partie forêt : c'est presque impossible sans accrochage."
+    ],
+    "track_limits": "Tolérantes (L'herbe et les graviers punissent très vite)",
+    "rain_rating": "Très Difficile (L'eau stagne sous les arbres)",
+    "difficulty": 9
   }
 }
